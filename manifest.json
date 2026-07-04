@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Enhanced VTT",
+  "version": "1.0",
+  "description": "Utilitário avançado para o Roll20 (Gerenciamento de Fichas e Tokens)",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "*://app.roll20.net/editor/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://app.roll20.net/editor/*"],
+      "js": ["content.js"],
+      "css": ["styles/panel.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js",
+        "ui/panel.html",
+        "assets/*"
+      ],
+      "matches": ["*://app.roll20.net/*"]
+    }
+  ],
+  "action": {
+    "default_title": "Abrir Painel Enhanced VTT",
+    "default_icon": "assets/Icone.png"
+  },
+  "icons": {
+    "48": "assets/Icone.png",
+    "128": "assets/Icone.png"
+  }
+}

@@ -1,0 +1,4505 @@
+{
+  "_exportVersion": 5,
+  "_exportedAt": "2026-07-04T13:35:16.014Z",
+  "character": {
+    "name": "Lunny Tempus",
+    "bio": "",
+    "gmnotes": "",
+    "avatar": "https://i.imgur.com/iBRomtr.png",
+    "inplayerjournals": "",
+    "controlledby": "",
+    "defaulttoken": "{\"width\":70,\"height\":70,\"imgsrc\":\"https://i.imgur.com/Q8rm5ie.png\",\"name\":\"Lunny Tempus\",\"show_tooltip\":false,\"controlledby\":\"-OwOTb4-q80cumD0XqLz\",\"bar1_value\":40,\"bar1_max\":40,\"bar1_link\":\"-OwcYXdGN-qSu6mu-Gc_\",\"bar3_value\":\"0\",\"bar3_link\":\"-OwXgllc_zgk0sX4ZT91\",\"aura1_color\":\"#ffff00\",\"aura2_color\":\"#ff0000\",\"showplayers_bar1\":true,\"has_bright_light_vision\":true,\"has_low_light_vision\":true,\"has_night_vision\":true,\"night_vision_distance\":1,\"dim_light_opacity\":\"0.75\",\"baseOpacity\":\"1\",\"interactions\":{\"chat\":{\"enabled\":false,\"payload\":\"\",\"trigger\":\"enter\"},\"opacity\":{\"enabled\":false,\"payload\":\"0.5\",\"trigger\":\"enter\"}},\"fadeOnOverlap\":false,\"low_light_distance\":0,\"represents\":\"-OwhEho0BsyZUnxXHkVQ\"}",
+    "tags": "[]",
+    "archived": false,
+    "attrorder": "",
+    "abilorder": "",
+    "mancerdata": "{}",
+    "expansion": null,
+    "expansioninitials": "",
+    "expansionid": null,
+    "charactersheetname": "ogl5e"
+  },
+  "defaulttoken": {
+    "width": 70,
+    "height": 70,
+    "imgsrc": "https://i.imgur.com/Q8rm5ie.png",
+    "name": "Lunny Tempus",
+    "show_tooltip": false,
+    "controlledby": "-OwOTb4-q80cumD0XqLz",
+    "bar1_value": 40,
+    "bar1_max": 40,
+    "bar1_link": "-OwcYXdGN-qSu6mu-Gc_",
+    "bar3_value": "0",
+    "bar3_link": "-OwXgllc_zgk0sX4ZT91",
+    "aura1_color": "#ffff00",
+    "aura2_color": "#ff0000",
+    "showplayers_bar1": true,
+    "has_bright_light_vision": true,
+    "has_low_light_vision": true,
+    "has_night_vision": true,
+    "night_vision_distance": 1,
+    "dim_light_opacity": "0.75",
+    "baseOpacity": "1",
+    "interactions": {
+      "chat": {
+        "enabled": false,
+        "payload": "",
+        "trigger": "enter"
+      },
+      "opacity": {
+        "enabled": false,
+        "payload": "0.5",
+        "trigger": "enter"
+      }
+    },
+    "fadeOnOverlap": false,
+    "low_light_distance": 0
+  },
+  "attributes": [
+    {
+      "name": "l1mancer_status",
+      "current": "completed",
+      "max": ""
+    },
+    {
+      "name": "init_tiebreaker",
+      "current": "@{dexterity}/100",
+      "max": ""
+    },
+    {
+      "name": "charname_output",
+      "current": "{{charname=@{character_name}}}",
+      "max": ""
+    },
+    {
+      "name": "initiative_bonus",
+      "current": 10.16,
+      "max": ""
+    },
+    {
+      "name": "filter_traits_by",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "hitdieroll",
+      "current": "4",
+      "max": ""
+    },
+    {
+      "name": "showleveler",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "invalidXP",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "kingmaker_tab",
+      "current": "nav-tabs-kingmaker--settings",
+      "max": ""
+    },
+    {
+      "name": "kingdom_culture_action",
+      "current": "%{Lunny Tempus|kingdom-culture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_economy_action",
+      "current": "%{Lunny Tempus|kingdom-economy-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_loyalty_action",
+      "current": "%{Lunny Tempus|kingdom-loyalty-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_stability_action",
+      "current": "%{Lunny Tempus|kingdom-stability-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_agriculture_action",
+      "current": "%{Lunny Tempus|kingdom-agriculture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_arts_action",
+      "current": "%{Lunny Tempus|kingdom-arts-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_boating_action",
+      "current": "%{Lunny Tempus|kingdom-boating-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_defense_action",
+      "current": "%{Lunny Tempus|kingdom-defense-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_engineering_action",
+      "current": "%{Lunny Tempus|kingdom-engineering-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_exploration_action",
+      "current": "%{Lunny Tempus|kingdom-exploration-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_folklore_action",
+      "current": "%{Lunny Tempus|kingdom-folklore-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_industry_action",
+      "current": "%{Lunny Tempus|kingdom-industry-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_intrigue_action",
+      "current": "%{Lunny Tempus|kingdom-intrigue-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_magic_action",
+      "current": "%{Lunny Tempus|kingdom-magic-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_politics_action",
+      "current": "%{Lunny Tempus|kingdom-politics-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_scholarship_action",
+      "current": "%{Lunny Tempus|kingdom-scholarship-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_statecraft_action",
+      "current": "%{Lunny Tempus|kingdom-statecraft-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_trade_action",
+      "current": "%{Lunny Tempus|kingdom-trade-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_warfare_action",
+      "current": "%{Lunny Tempus|kingdom-warfare-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_wilderness_action",
+      "current": "%{Lunny Tempus|kingdom-wilderness-action}",
+      "max": ""
+    },
+    {
+      "name": "army_scouting_action",
+      "current": "%{Lunny Tempus|army-scouting-action}",
+      "max": ""
+    },
+    {
+      "name": "army_maneuver_action",
+      "current": "%{Lunny Tempus|army-maneuver-action}",
+      "max": ""
+    },
+    {
+      "name": "army_morale_action",
+      "current": "%{Lunny Tempus|army-morale-action}",
+      "max": ""
+    },
+    {
+      "name": "army_ranged_action",
+      "current": "%{Lunny Tempus|army-ranged-action}",
+      "max": ""
+    },
+    {
+      "name": "sheet_version",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "version",
+      "current": 4.21,
+      "max": ""
+    },
+    {
+      "name": "appliedUpdates",
+      "current": "upgrade_to_4_2_1,fix_spell_attacks,fix_pc_skill_and_saving_rolls,fix_pc_saving_rolls,fix_pc_skill_and_saving_rolls_with_expertise,fix_pc_skill_and_saving_rolls_with_reliable_talent,enable_powerful_build_on_existing_characters,fix_pc_global_critical_damage_rolls,fix_pc_global_critical_stacked_damage_rolls,fix_pc_skill_rolls_tooltips,fix_pc_global_statical_critical_damage,fix_spell_school_ouput,fix_pc_global_multiple_statical_critical_damage,fix_spell_savedc_output,fix_spellpoints,fix_advantage_query,fix_attacks_spelllink,fix_pc_skills_when_jack_and_odd_prof,fix_armor_stealth_penalty,fix_pc_printedskills",
+      "max": ""
+    },
+    {
+      "name": "strength_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{strength-save-u}}} {{mod=@{strength_save_bonus}}} {{r1=[[@{d20}+@{strength_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{strength_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "dexterity_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{dexterity-save-u}}} {{mod=@{dexterity_save_bonus}}} {{r1=[[@{d20}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "constitution_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{constitution-save-u}}} {{mod=@{constitution_save_bonus}}} {{r1=[[@{d20}+@{constitution_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{constitution_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{intelligence-save-u}}} {{mod=@{intelligence_save_bonus}}} {{r1=[[@{d20}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{wisdom-save-u}}} {{mod=@{wisdom_save_bonus}}} {{r1=[[@{d20}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "charisma_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{charisma-save-u}}} {{mod=@{charisma_save_bonus}}} {{r1=[[@{d20}+@{charisma_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{charisma_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "honor_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{honor-save-u}}} {{mod=@{honor_save_bonus}}} {{r1=[[@{d20}+@{honor_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{honor_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "sanity_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{sanity-save-u}}} {{mod=@{sanity_save_bonus}}} {{r1=[[@{d20}+@{sanity_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{sanity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "athletics_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{athletics-u}}} {{mod=@{athletics_bonus}}} {{r1=[[@{d20}+@{athletics_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{athletics_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "acrobatics_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{acrobatics-u}}} {{mod=@{acrobatics_bonus}}} {{r1=[[@{d20}+@{acrobatics_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{acrobatics_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "sleight_of_hand_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{sleight_of_hand-u}}} {{mod=@{sleight_of_hand_bonus}}} {{r1=[[@{d20}+@{sleight_of_hand_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{sleight_of_hand_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "stealth_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{stealth-u}}} {{mod=@{stealth_bonus}}} {{r1=[[@{d20}+@{stealth_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{stealth_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "arcana_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{arcana-u}}} {{mod=@{arcana_bonus}}} {{r1=[[@{d20}+@{arcana_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{arcana_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "history_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{history-u}}} {{mod=@{history_bonus}}} {{r1=[[@{d20}+@{history_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{history_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "investigation_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{investigation-u}}} {{mod=@{investigation_bonus}}} {{r1=[[@{d20}+@{investigation_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{investigation_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "nature_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{nature-u}}} {{mod=@{nature_bonus}}} {{r1=[[@{d20}+@{nature_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{nature_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "religion_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{religion-u}}} {{mod=@{religion_bonus}}} {{r1=[[@{d20}+@{religion_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{religion_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "animal_handling_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{animal_handling-u}}} {{mod=@{animal_handling_bonus}}} {{r1=[[@{d20}+@{animal_handling_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{animal_handling_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "insight_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{insight-u}}} {{mod=@{insight_bonus}}} {{r1=[[@{d20}+@{insight_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{insight_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "medicine_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{medicine-u}}} {{mod=@{medicine_bonus}}} {{r1=[[@{d20}+@{medicine_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{medicine_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "perception_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{perception-u}}} {{mod=@{perception_bonus}}} {{r1=[[@{d20}+@{perception_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{perception_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "survival_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{survival-u}}} {{mod=@{survival_bonus}}} {{r1=[[@{d20}+@{survival_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{survival_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "deception_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{deception-u}}} {{mod=@{deception_bonus}}} {{r1=[[@{d20}+@{deception_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{deception_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "intimidation_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{intimidation-u}}} {{mod=@{intimidation_bonus}}} {{r1=[[@{d20}+@{intimidation_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{intimidation_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "performance_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{performance-u}}} {{mod=@{performance_bonus}}} {{r1=[[@{d20}+@{performance_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{performance_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "persuasion_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{persuasion-u}}} {{mod=@{persuasion_bonus}}} {{r1=[[@{d20}+@{persuasion_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{persuasion_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_roll",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_crit",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_type",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "queryadvantage",
+      "current": "{{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}",
+      "max": ""
+    },
+    {
+      "name": "stealth_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "other_tool",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_languages",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_armor",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_weapon",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_other",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "mancer_confirm_flag",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "mancer_cancel",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "lvup_button_mode",
+      "current": " ",
+      "max": ""
+    },
+    {
+      "name": "rtype",
+      "current": "@{advantagetoggle}",
+      "max": ""
+    },
+    {
+      "name": "wtype",
+      "current": "@{whispertoggle}",
+      "max": ""
+    },
+    {
+      "name": "dtype",
+      "current": "pick",
+      "max": ""
+    },
+    {
+      "name": "core_die",
+      "current": "1d20",
+      "max": ""
+    },
+    {
+      "name": "pb_type",
+      "current": "level",
+      "max": ""
+    },
+    {
+      "name": "level_calculations",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "encumberance_setting",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "simpleinventory",
+      "current": "complex",
+      "max": ""
+    },
+    {
+      "name": "simpletraits",
+      "current": "complex",
+      "max": ""
+    },
+    {
+      "name": "simpleproficencies",
+      "current": "complex",
+      "max": ""
+    },
+    {
+      "name": "npc_name_flag",
+      "current": "{{name=@{npc_name}}}",
+      "max": ""
+    },
+    {
+      "name": "ammotracking",
+      "current": "off",
+      "max": ""
+    },
+    {
+      "name": "cd_bar1_v",
+      "current": "hp_max",
+      "max": ""
+    },
+    {
+      "name": "cd_bar1_m",
+      "current": "hp_max",
+      "max": ""
+    },
+    {
+      "name": "cd_bar2_l",
+      "current": "npc_ac",
+      "max": ""
+    },
+    {
+      "name": "honor_toggle",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "sanity_toggle",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "d20",
+      "current": "1d20",
+      "max": ""
+    },
+    {
+      "name": "pb",
+      "current": "3",
+      "max": ""
+    },
+    {
+      "name": "jack",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "pbd_safe",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "weighttotal",
+      "current": 13.5,
+      "max": ""
+    },
+    {
+      "name": "encumberance",
+      "current": " ",
+      "max": ""
+    },
+    {
+      "name": "spell_attack_bonus",
+      "current": 8,
+      "max": ""
+    },
+    {
+      "name": "spell_save_dc",
+      "current": 15,
+      "max": ""
+    },
+    {
+      "name": "jack_bonus",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "jack_attr",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "lvl1_slots_total",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "lvl2_slots_total",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "lvl3_slots_total",
+      "current": 2,
+      "max": ""
+    },
+    {
+      "name": "lvl4_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl5_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl6_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl7_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl8_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl9_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "strength_save_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "dexterity_save_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "constitution_save_bonus",
+      "current": 2,
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "charisma_save_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "honor_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "sanity_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "death_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "athletics_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "acrobatics_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "sleight_of_hand_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "arcana_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "history_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "investigation_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "nature_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "religion_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "animal_handling_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "insight_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "medicine_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "perception_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "survival_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "deception_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "intimidation_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "performance_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "persuasion_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "death_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{death-save-u}}} {{mod=@{death_save_bonus}}} {{r1=[[@{d20}+@{death_save_bonus}@{pbd_safe}]]}} @{advantagetoggle}+@{death_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "passive_wisdom",
+      "current": 13,
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNTMBQiCqLrZX4BK0_name",
+      "current": "-----------------------------------------",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNTMBQiCqLrZX4BK0_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNYvLYRU9UUu4w-gL_name",
+      "current": "-----------------------------------------",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNYvLYRU9UUu4w-gL_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNZvRZvbJO0wcdjtL_name",
+      "current": "-----------------------------------------",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNZvRZvbJO0wcdjtL_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNZVPSD-TN4ka8d4D_name",
+      "current": "-----------------------------------------",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNZVPSD-TN4ka8d4D_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNZvRZvbJO0wcdjtL_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNaWAfBciDrUouwI6_name",
+      "current": "-----------------------------------------",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNaWAfBciDrUouwI6_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNchdG15sVv7GjZfy_name",
+      "current": "Background",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNchdG15sVv7GjZfy_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNe7DkWqOX9dHWDA1_name",
+      "current": "Feat",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNe7DkWqOX9dHWDA1_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNeoopthDmardaH6x_name",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNeoopthDmardaH6x_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNfvpFgsydbxvqEYa_name",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNfvpFgsydbxvqEYa_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "_reporder_repeating_traits",
+      "current": "-OwcNTMBQiCqLrZX4BK0,-OwcNchdG15sVv7GjZfy,-OwcSD8kRQ1gBUZNBWiH,-OwcNYvLYRU9UUu4w-gL,-OwcNe7DkWqOX9dHWDA1,-OwcSUpr8h4sVtx9DoVw,-OwcZW9AAowBOlRq0ikw,-OwcNZVPSD-TN4ka8d4D,-OwcNeoopthDmardaH6x,-OwcTdqn7QtjKFYgmGV9,-OwcTrQZZiKwLeAyW6aZ,-OwcTy-emR8o3bAVBcVV,-OwcVGfEtHpW6lOKKxcU,-OwcNZvRZvbJO0wcdjtL,-OwcNfvpFgsydbxvqEYa,-OwcXHpc4jt9zwQen962,-OwcXMz7p-K-4TTQIZ1V,-OwcXTKhcnHbMLTjJNtL,-OwcXnsUmid-kkvT3Ph6,-OwcXu1ZhunaCy120idk,-OwcNaWAfBciDrUouwI6",
+      "max": ""
+    },
+    {
+      "name": "arcana_prof",
+      "current": "(@{pb}*@{arcana_type})",
+      "max": ""
+    },
+    {
+      "name": "nature_prof",
+      "current": "(@{pb}*@{nature_type})",
+      "max": ""
+    },
+    {
+      "name": "strength_base",
+      "current": "8",
+      "max": ""
+    },
+    {
+      "name": "strength_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "strength",
+      "current": 8,
+      "max": ""
+    },
+    {
+      "name": "strength_mod",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "npc_str_negative",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "dexterity_base",
+      "current": "16",
+      "max": ""
+    },
+    {
+      "name": "dexterity_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "dexterity",
+      "current": 16,
+      "max": ""
+    },
+    {
+      "name": "dexterity_mod",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "npc_dex_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "armorwarningflag",
+      "current": "hide",
+      "max": ""
+    },
+    {
+      "name": "customacwarningflag",
+      "current": "hide",
+      "max": ""
+    },
+    {
+      "name": "ac",
+      "current": 13,
+      "max": ""
+    },
+    {
+      "name": "constitution_base",
+      "current": "14",
+      "max": ""
+    },
+    {
+      "name": "constitution_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "constitution",
+      "current": 14,
+      "max": ""
+    },
+    {
+      "name": "constitution_mod",
+      "current": 2,
+      "max": ""
+    },
+    {
+      "name": "npc_con_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "intelligence_base",
+      "current": "18",
+      "max": ""
+    },
+    {
+      "name": "intelligence_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "intelligence",
+      "current": 18,
+      "max": ""
+    },
+    {
+      "name": "intelligence_mod",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "npc_int_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "wisdom_base",
+      "current": "10",
+      "max": ""
+    },
+    {
+      "name": "wisdom_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "wisdom",
+      "current": 10,
+      "max": ""
+    },
+    {
+      "name": "wisdom_mod",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "npc_wis_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "charisma_base",
+      "current": "8",
+      "max": ""
+    },
+    {
+      "name": "charisma_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "charisma",
+      "current": 8,
+      "max": ""
+    },
+    {
+      "name": "charisma_mod",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "npc_cha_negative",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "options-class-selection",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "class",
+      "current": "Wizard",
+      "max": ""
+    },
+    {
+      "name": "hitdie_final",
+      "current": "@{hitdietype}",
+      "max": ""
+    },
+    {
+      "name": "level",
+      "current": 5,
+      "max": ""
+    },
+    {
+      "name": "caster_level",
+      "current": 5,
+      "max": ""
+    },
+    {
+      "name": "class_display",
+      "current": "Chronurgy  Wizard 5",
+      "max": ""
+    },
+    {
+      "name": "hit_dice",
+      "current": "5",
+      "max": 5
+    },
+    {
+      "name": "hero_points",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OwcOONZLcBSz-ZVpxSZ_name",
+      "current": "Comun, Elfico, Draconico e Abissal",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OwcOONZLcBSz-ZVpxSZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolname",
+      "current": "Ferramentas de Ladrão",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolattr",
+      "current": "DEXTERITY",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolbonus",
+      "current": 6,
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolbonus_display",
+      "current": 6,
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolroll",
+      "current": "@{wtype}&{template:simple} {{rname=@{toolname}}} {{mod=@{toolbonus}}} {{r1=[[@{d20}+@{toolbonus}[Mods]@{pbd_safe}]]}} @{advantagetoggle}+@{toolbonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_toolattr_base",
+      "current": "@{dexterity_mod}",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OwcOUGaStIgiHRqCDpR_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "background",
+      "current": "Quandrix Student",
+      "max": ""
+    },
+    {
+      "name": "race",
+      "current": "Harengon",
+      "max": ""
+    },
+    {
+      "name": "race_display",
+      "current": "Harengon",
+      "max": ""
+    },
+    {
+      "name": "subclass",
+      "current": "Chronurgy ",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_name",
+      "current": "Quandrix Initiate",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_description",
+      "current": "You gain the Strixhaven Initiate feat and must choose Quandrix within it.\n\nIn addition, if you have the Spellcasting or Pact Magic feature, the spells on the Quandrix Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)\n\nQuandrix Spells\nSpell Level\tSpells\n1st\tEntangle, Guiding Bolt\n2nd\tEnlarge/Reduce, Vortex Warp\n3rd\tAura of Vitality, Haste\n4th\tControl Water, Freedom of Movement\n5th\tCircle of Power, Passwall\nConsider customizing how your spells look when you cast them. Your Quandrix spells might manifest amid kaleidoscopic swirls of fractal patterns, amplifying the tiniest movements of your somatic components. When your magic creates or alters creatures, it might briefly surround the targets with shimmering fractal designs or tessellated patterns.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_source",
+      "current": "Antecedente",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSD8kRQ1gBUZNBWiH_source_type",
+      "current": "BG: Quandrix Student",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_name",
+      "current": "Strixhaven Initiate",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_description",
+      "current": "You have studied some magical theory and have learned a few spells associated with Strixhaven University.\n\nChoose one of Strixhaven's colleges: Lorehold, Prismari, Quandrix, Silverquill, or Witherbloom. You learn two cantrips and one 1st-level spell based on the college you choose, as specified in the Strixhaven Spells table.\n\nYou can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.\n\nYour spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).\n\nCantrips: Guidance e Druidcraft\nMagia: Cure Wounds",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_source",
+      "current": "Talento",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_source_type",
+      "current": "BG: Quandrix Studant",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcSUpr8h4sVtx9DoVw_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcNeoopthDmardaH6x_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_name",
+      "current": "Hare-Trigger",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_description",
+      "current": "You can add your proficiency bonus to your initiative rolls.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_source_type",
+      "current": "Racial: Harengon",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTdqn7QtjKFYgmGV9_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "alignment",
+      "current": "CN",
+      "max": ""
+    },
+    {
+      "name": "speed",
+      "current": "30fts",
+      "max": ""
+    },
+    {
+      "name": "perception_prof",
+      "current": "(@{pb}*@{perception_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_description",
+      "current": "You have proficiency in the Perception skill.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_name",
+      "current": "Leporine Senses",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_source_type",
+      "current": "Racial: Harengon",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTrQZZiKwLeAyW6aZ_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_description",
+      "current": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're prone or your speed is 0.\n\n[a](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDNyZGpuZDE3ODYybmVsOGFoMjV1N20zNGh1eWhtNzhwb25vOWlrMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tuFAJztvpUif9539pa/giphy.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_name",
+      "current": "Lucky Footwork",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_source_type",
+      "current": "Racial: Harengon",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcTy-emR8o3bAVBcVV_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_description",
+      "current": "As a bonus action, you can jump a number of feet equal  to [[@{pb}*5]]fts (five times your proficiency bonus), without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\n\n[a](https://media1.tenor.com/m/bxgS4-lVWNgAAAAC/wake-thumper.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_name",
+      "current": "Rabbit Hop",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_source_type",
+      "current": "Racial: Harengon",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcVGfEtHpW6lOKKxcU_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "base_level",
+      "current": "5",
+      "max": ""
+    },
+    {
+      "name": "other_resource_name",
+      "current": "Rabbit Hop",
+      "max": ""
+    },
+    {
+      "name": "other_resource",
+      "current": "3",
+      "max": "3"
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_name",
+      "current": "Arcane Recovery",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_description",
+      "current": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.\n\nFor example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_source_type",
+      "current": "Wizard: Lvl 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXHpc4jt9zwQen962_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_source_type",
+      "current": "Wizard: Lvl 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_name",
+      "current": "Spellcasting",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_description",
+      "current": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.\n\nCantrips\nAt 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table.\n\nSpellbook\nAt 1st level, you have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind.\n\nPreparing and Casting Spells\nThe Wizard table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.\n\nSpellcasting Ability\nIntelligence is your spellcasting ability for your wizard spells, since you learn your wizard spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + Intelligence modifier + Proficiency Bonus\nSpell attack modifier = Intelligence modifier + Proficiency Bonus\nRitual Casting\nYou can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\n\nSpellcasting Focus\nYou can use an arcane focus as a spellcasting focus for your wizard spells.\n\nLearning Spells of 1st Level and Higher\nEach time you gain a wizard level, you can add two wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your spellbook (see \"Your Spellbook\").",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXMz7p-K-4TTQIZ1V_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_description",
+      "current": "2nd-level Chronurgy Magic feature\n\nYou can magically exert limited control over the flow of time around a creature. As a reaction, after you or a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can force the creature to reroll. You make this decision after you see whether the roll succeeds or fails. The target must use the result of the second roll.\n\nYou can use this ability twice, and you regain any expended uses when you finish a long rest.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_name",
+      "current": "Level 2: Chronal Shift",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_source_type",
+      "current": "Wizard: Lvl 2",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "class_resource_name",
+      "current": "Arcane Recovery",
+      "max": ""
+    },
+    {
+      "name": "class_resource",
+      "current": "1",
+      "max": "1"
+    },
+    {
+      "name": "repeating_resource_-OwcXdhEmWulLz4uLsoW_resource_left_name",
+      "current": "Chronal Shift",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-OwcXdhEmWulLz4uLsoW_resource_left",
+      "current": "2",
+      "max": "2"
+    },
+    {
+      "name": "repeating_traits_-OwcXTKhcnHbMLTjJNtL_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_description",
+      "current": "2nd-level Chronurgy Magic feature\n\nYou can add your Intelligence modifier to your initiative rolls.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_name",
+      "current": "Level 2: Temporal Awareness",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_source_type",
+      "current": "Wizard: Lvl 2",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXnsUmid-kkvT3Ph6_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_name",
+      "current": "ASI",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_description",
+      "current": "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.\n\nIf your DM allows the use of feats, you may instead take a feat.\n\nLevel 4: Warcaster",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_source_type",
+      "current": "Wizard: Lvl 4",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcXu1ZhunaCy120idk_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "tab",
+      "current": "spells",
+      "max": ""
+    },
+    {
+      "name": "global_save_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OwcYBN8gAhNON7QIWF2_global_save_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OwcYBN8gAhNON7QIWF2_global_save_name",
+      "current": "BLESS",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OwcYBN8gAhNON7QIWF2_global_save_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "global_save_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_skill_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OwcYBSjm5Z1ZS4h-czt_global_skill_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OwcYBSjm5Z1ZS4h-czt_global_skill_name",
+      "current": "GUIDANCE",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OwcYBSjm5Z1ZS4h-czt_global_skill_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "global_skill_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_attack_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OwcYBXWS0QGBwLwAk7Z_global_attack_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OwcYBXWS0QGBwLwAk7Z_global_attack_name",
+      "current": "BLESS",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OwcYBXWS0QGBwLwAk7Z_global_attack_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "global_attack_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "global_ac_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OwcYBlRVgbYdNh-FJs5_global_ac_val",
+      "current": "5",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OwcYBlRVgbYdNh-FJs5_global_ac_name",
+      "current": "Shield",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OwcYBlRVgbYdNh-FJs5_global_ac_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "initmod",
+      "current": "7",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OwcYBN8gAhNON7QIWF2_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OwcYBXWS0QGBwLwAk7Z_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OwcYBlRVgbYdNh-FJs5_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OwcYBSjm5Z1ZS4h-czt_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "hp",
+      "current": "40",
+      "max": "40"
+    },
+    {
+      "name": "history_prof",
+      "current": "(@{pb}*@{history_type})",
+      "max": ""
+    },
+    {
+      "name": "investigation_prof",
+      "current": "(@{pb}*@{investigation_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcYxAneqBMclvhKDt4_itemname",
+      "current": "Quarterstaff",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZ-O-eT9Ozwf6uZQK_itemname",
+      "current": "Component Pouch",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZ1carqgpNxXZeIOz_itemname",
+      "current": "Scholar Pack",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZ4HTsaAvmRXMGft7_itemname",
+      "current": "Spellbook",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZ8bmocWj9qYinuU0_itemname",
+      "current": "Bottle of Black ink",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZBGZIl-br1vrke4o_itemname",
+      "current": "ink pen",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZCcONBUlt03Hh81Z_itemname",
+      "current": "abacus",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZDZou9pC-P8MK0Qf_itemname",
+      "current": "Book (arcane theory)",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZGTMFQa27KdqUCMF_itemname",
+      "current": "Schooll uniform",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwcZIMpzlhpp8axk5Z8_itemname",
+      "current": "Pouch",
+      "max": ""
+    },
+    {
+      "name": "gp",
+      "current": "675",
+      "max": ""
+    },
+    {
+      "name": "spellcasting_ability",
+      "current": "@{intelligence_mod}+",
+      "max": ""
+    },
+    {
+      "name": "spell_attack_mod",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_description",
+      "current": "You gain the following benefits.\n\nAbility Score Increase. Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.\n\nConcentration. You have Advantage on Constitution saving throws that you make to maintain Concentration.\n\nReactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.\n\nSomatic Components. You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_name",
+      "current": "Warcaster",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_source",
+      "current": "Talento",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_source_type",
+      "current": "Wizard: Lv 4",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OwcZW9AAowBOlRq0ikw_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "lvl3_slots_expended",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "lvl2_slots_expended",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "lvl1_slots_expended",
+      "current": "4",
+      "max": ""
+    },
+    {
+      "name": "age",
+      "current": "22",
+      "max": ""
+    },
+    {
+      "name": "size",
+      "current": "médio",
+      "max": ""
+    },
+    {
+      "name": "height",
+      "current": "1,64",
+      "max": ""
+    },
+    {
+      "name": "weight",
+      "current": "54kg",
+      "max": ""
+    },
+    {
+      "name": "eyes",
+      "current": "Verdes",
+      "max": ""
+    },
+    {
+      "name": "skin",
+      "current": "Morena",
+      "max": ""
+    },
+    {
+      "name": "hair",
+      "current": "Brancos",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OwdztYHw9Dd5fTxRxTe_itemname",
+      "current": "Grimório Arcano +1 (Arcane Grimoire +1):",
+      "max": ""
+    },
+    {
+      "name": "globalmagicmod",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-Owe56aGsie-Qn4jPfBr_global_ac_val",
+      "current": "3",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-Owe56aGsie-Qn4jPfBr_global_ac_name",
+      "current": "Mage Armor",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-Owe56aGsie-Qn4jPfBr_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "_reporder_repeating_acmod",
+      "current": "-Owe56aGsie-Qn4jPfBr,-OwcYBlRVgbYdNh-FJs5",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-Owe8QPhfjzev8IfB-SY_global_damage_active_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OweB-3txc3YR0AAt60x_itemname",
+      "current": "Wand of Web",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-OwcXdhEmWulLz4uLsoW_resource_right_name",
+      "current": "Wand of Web",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-OwcXdhEmWulLz4uLsoW_resource_right",
+      "current": "7",
+      "max": "7"
+    },
+    {
+      "name": "_reporder_repeating_spell-1",
+      "current": "-kxGfaTRFHI10Wbzb19,-kPsbW5b7Oi8VeMprvy,-e313wEHQCq8RnzK9W9,-qdpUQ7CJYtmeaNHmxd,-pMuwaxlQNbetD5LW1J,-PeGvCx79ORaVrprH37,-ClkePyj4Sqv2JEWd3m,-H5RlSafnBDdJv8mEFg,-2bMamVWt9HPzjz7ved,-F8p002MdPbpiERRpDg,-c6vWXKNF6pkcUtrgWA,-xK3SAatwbNGT5QtsPP",
+      "max": "",
+      "id": "-cgxTpKgtxvmN0PIruK"
+    },
+    {
+      "name": "_reporder_repeating_spell-2",
+      "current": "-XK5CjgyOAp8lYLAqfR,-WuUwo1TFUBy1sQMy0Q,-COC4lu1Sa1UTjZrkTu,-EwkgOtSZDzZUxEjZb0,-5YU41LRhHBbjOWBxGj,-DyGrkkEZOBBEx5Bk37,-87gxM4qiBFWS38zx8w",
+      "max": "",
+      "id": "-PlTxBPpuAB4W6qNSy8"
+    },
+    {
+      "name": "_reporder_repeating_spell-3",
+      "current": "-XxAKXTh5H0XuxU2kbe,-FEjd1EymgxlIcdr65m,-vY9zu2U5imsKiqPptj,-V4nkKCyQS5ON8fJGWD",
+      "max": "",
+      "id": "-VezfZgWoMe7sXToTo1"
+    },
+    {
+      "name": "_reporder_repeating_spell-cantrip",
+      "current": "-NZbk5MEwPahoBfS6tL,-8DDlFdZ87BiYUL0FWp,-s0vCh8GcALJKQ9i6f1,-kmOYiaoQNQazQDg1R9,-THiNjSeBiAYshngnej,-FnZO7ureFQaROhQNlJ",
+      "max": "",
+      "id": "-qNFHg8X4Jk2InVwmN9"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellname",
+      "current": "Fire Bolt",
+      "max": "",
+      "id": "-tYxy0KJ38IF8oGesHl"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-5EAGf3Y2F0BDggU1oo"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-24VctzQjOUvLiR9N5a"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-LJqpKxuvgTwdGKCCUX"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellschool",
+      "current": "V",
+      "max": "",
+      "id": "-PS8LnMOfjAbDJyktUZ"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-VitssXSJM9Ul55vkko"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellrange",
+      "current": "120 feets",
+      "max": "",
+      "id": "-fBSAABkDrWf62ARII1"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-Fe3kSrOMHAlivVN956"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-lF5PtDgBo5ybm2hX6s"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-273LNYENAXLbk9nKLe"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spelldescription",
+      "current": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.\n\nThis spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "max": "",
+      "id": "-D6qqf9RcbuHQRiFHrO"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-Uh0l3pEC0C2sOx5CiY"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-St2e4ceh4nBqSQmenO"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-DzYc3An5SdaZM8Ac92"
+    },
+    {
+      "name": "repeating_spell-cantrip_-NZbk5MEwPahoBfS6tL_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-JczW54AZzsA6JWsywx"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellname",
+      "current": "Guidance",
+      "max": "",
+      "id": "-aJnLzI5VjvgGcD0IyE"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-ArS9rBDLRK9QYrsY2O"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-GxMNoU5dgkyZPmyUzp"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-2Tw5BgpVSKVzsbC1aF"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellschool",
+      "current": "divination",
+      "max": "",
+      "id": "-c256HYskDHaeBYxEbF"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-891KnEYBUeItJ8sBZj"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-PMxqg5RcvEF1BjMZ1Q"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellduration",
+      "current": "Concentration, up to 1 minute",
+      "max": "",
+      "id": "-lENPKGuzWzZj0eoR05"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-8q4DHX7ApMKMZrvwH7"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-cnsvypOLn9ctpOTvY5"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spelldescription",
+      "current": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+      "max": "",
+      "id": "-QhOyuMf8XojpLDv898"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-jCMVF567Vli7xCkHbx"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-eF6f3iV5enyxcAjJTV"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-8wmXF2ChJPDpV3eDRs"
+    },
+    {
+      "name": "repeating_spell-cantrip_-8DDlFdZ87BiYUL0FWp_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-6uXq8WH36JPq4Nhc6L"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellname",
+      "current": "Light",
+      "max": "",
+      "id": "-khht5GvUmdGbvAU39F"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-m3Ef2iRJFp3U8qHbs5"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-3TizoF7WxSR5JJzYg5"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-OJUNuVYkrSMNlf0gpE"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellschool",
+      "current": "V",
+      "max": "",
+      "id": "-FiD9W5rDG5XBYW4WKG"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-JAYwuebVuocEffRYZq"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-KvtM8SkxtJEmGbHXZR"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellduration",
+      "current": "1 hour",
+      "max": "",
+      "id": "-UTc9n2SEbympos5lE1"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-ksEWau9FoklVaCri5y"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-6e05BbcewnUuzYxINZ"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spelldescription",
+      "current": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "max": "",
+      "id": "-Q8E3B1BGmlRaQrh9JN"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-HZ0ysSmNPzapExpzRx"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-tDPz89XAbsrnsosETR"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-xkxWFc0YyYBVSF7G3D"
+    },
+    {
+      "name": "repeating_spell-cantrip_-s0vCh8GcALJKQ9i6f1_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-iPV35Q9eiNI4Yrjxxz"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellname",
+      "current": "Mage Hand",
+      "max": "",
+      "id": "-RxJrIrMVoaa4mutUV0"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-6JUmoQCu4SVZaTwIh3"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-keUanugeTK9SD6y7D6"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-69daxKon673FFVXStK"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-rMkEXUz8h3awUA4pBo"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-I3Rvm5NsF99ryloUfG"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellrange",
+      "current": "30 feets",
+      "max": "",
+      "id": "-wCop2hDZP8vxJ9NKVs"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellduration",
+      "current": "1 minute",
+      "max": "",
+      "id": "-eUN1eLsiiXdmdpuuIN"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-9zQclapAaikpJXbjiZ"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-y24lxS278E6qqnMNQ9"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spelldescription",
+      "current": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\n\nThe hand can't attack, activate magic items, or carry more than 10 pounds.",
+      "max": "",
+      "id": "-ngBLfs0nkal2fd6L9a"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-oPoAwQ9S6gmqSB6wog"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-c0TA221jJT7SJWhpzZ"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-OwRTcVb4SHkWKcZXmr"
+    },
+    {
+      "name": "repeating_spell-cantrip_-kmOYiaoQNQazQDg1R9_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-7ZZZUcaqigWIMn8y5r"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellname",
+      "current": "Prestidigitation",
+      "max": "",
+      "id": "-2wEgThml4g3qdnNMiE"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-YGbeuaytnqEvVOgXMs"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-ussHjon7I9Lp73NfX8"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-GCyrIulFeAmgBQYj3w"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellschool",
+      "current": "transmutation",
+      "max": "",
+      "id": "-JhqAa1gc7tiVG0bXg7"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-nn3DHhiqjHF0a5I60l"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellrange",
+      "current": "10 feets",
+      "max": "",
+      "id": "-C1zCD1Pco6CaGneWOc"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellduration",
+      "current": "1 hour",
+      "max": "",
+      "id": "-4xoOP1EVqs5UevM1IY"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-W3cGDk1NxpEUF5ORbo"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-PMt68EOxvh6srCyJNY"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spelldescription",
+      "current": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\n\n• You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n• You instantaneously light or snuff out a candle, a torch, or a small campfire.\n• You instantaneously clean or soil an object no larger than 1 cubic foot.\n• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n• You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+      "max": "",
+      "id": "-h0D1QZkPikeoKB1jF5"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-kNol7ZTt7XvKXh9PeF"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-XI9exJRtuBrVO3qtMN"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-Or4lwfmQG7RuiKYPEU"
+    },
+    {
+      "name": "repeating_spell-cantrip_-THiNjSeBiAYshngnej_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-ui2vmpYXa6wbwGIFiq"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellname",
+      "current": "Mind Sliver",
+      "max": "",
+      "id": "-mGH9uOpErca1STXH8n"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-WKOIRXA3JOYnU1LGpN"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-h5uzrrWUsEKXQJpeNL"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-DUqoNYKMZf2YGuxxhO"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellschool",
+      "current": "E",
+      "max": "",
+      "id": "-t7OUJZ0QlA8s3QQIun"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-HXaAsYijS1IdmfDlWA"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-E2w6V1MIUQe1nq5Jlj"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellduration",
+      "current": "1 round",
+      "max": "",
+      "id": "-8ijz6PlVGV9zCK5A57"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spelllevel",
+      "current": "cantrip",
+      "max": "",
+      "id": "-Nd0uOGYy8QLqr4utm4"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellsource",
+      "current": "TCE",
+      "max": "",
+      "id": "-rq2VZpQaHDacyolnQ4"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spelldescription",
+      "current": "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.\n\nThis spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+      "max": "",
+      "id": "-iUAqHF6XkJlGWfN6RU"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-D5b8yB8coUtM66oTci"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-uMjy4gdt9lbtTHPkfn"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-kyECAPUSpWItThaWFT"
+    },
+    {
+      "name": "repeating_spell-cantrip_-FnZO7ureFQaROhQNlJ_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-eTyx6PVa0PmlYiH0H1"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellname",
+      "current": "Gift of Alacrity",
+      "max": "",
+      "id": "-8xHR1mRgTeJuYzetAo"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-x4WHo6kXQ1QiALtL1e"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-CquwwdDBG9kNLH8yUH"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-taXG3PSZxAGs11Gn26"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellschool",
+      "current": "divination",
+      "max": "",
+      "id": "-BK7FDOZJzAb49frf4e"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellcastingtime",
+      "current": "1 minute",
+      "max": "",
+      "id": "-643VAK20oyqEpa6uq1"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-3jUYS9svhGroGk1Ey2"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellduration",
+      "current": "8 hours",
+      "max": "",
+      "id": "-VXdkyptNXzgpFAcu8F"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-uS72v4xA5uGnPLBlND"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellsource",
+      "current": "EGW",
+      "max": "",
+      "id": "-fOt4SHCfFoqFfYyehw"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spelldescription",
+      "current": "You touch a willing creature. For the duration, the target can add 1d8 to its initiative rolls.",
+      "max": "",
+      "id": "-r69dijPNRichaP4q9m"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-03iFfWDHSo8qV4FBxJ"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-KWqyTgYqFUbCpaZoRQ"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-NRzRXUXI0vvokpQGFZ"
+    },
+    {
+      "name": "repeating_spell-1_-kxGfaTRFHI10Wbzb19_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-7i6iQWa3DKHvUmyvOM"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellname",
+      "current": "Cure Wounds",
+      "max": "",
+      "id": "-Pbw5KY1XhXTnbPiDqB"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-SzSQw8gZxrRS0OxE1e"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-X1On3fZWPe1E8wYGMi"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-2MW3QcnbpGYZTSwHF8"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellschool",
+      "current": "V",
+      "max": "",
+      "id": "-Ud86Wh2hF2Zyt3aFZJ"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-2vuw0tRIpeEd9mNaXw"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-HEWuM402ExTXsl8nRJ"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-YuZds4dY6Ebzy9iBTu"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-UulktbX7yTdZZRko53"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-fZHPmlOudTeW5Aby1t"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spelldescription",
+      "current": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "max": "",
+      "id": "-HbVjVuFM4DNiwDoYHm"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-UfX0WWEEtJS5r4OsUw"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-6P8QtV5ysOFkKk3wwW"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-026z8Xtmo1I2hKx7V4"
+    },
+    {
+      "name": "repeating_spell-1_-kPsbW5b7Oi8VeMprvy_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-5jfapStp6TOZGpSJcu"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellname",
+      "current": "Detect Magic",
+      "max": "",
+      "id": "-a42f5TZe3Txnccqj9M"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-cG79m3TbsIDBVRDuU2"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellritual",
+      "current": "1",
+      "max": "",
+      "id": "-9ACGYvXQ5WmzQG4Pob"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-okufbkvXG2ETTVgdjD"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellschool",
+      "current": "divination",
+      "max": "",
+      "id": "-ysikt70hJCFZ6DP06S"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-jHMgKfD9pW6hBer8Ap"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellrange",
+      "current": "Self",
+      "max": "",
+      "id": "-twNGXJZPuvJ26JmoHW"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellduration",
+      "current": "Concentration, up to 10 minutes",
+      "max": "",
+      "id": "-QmuRC3qQfxtUmI4Li8"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-AC013QWQ11b72jNd6U"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-XJy013UCICsX76mz9S"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spelldescription",
+      "current": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "max": "",
+      "id": "-GoyAm77H6j6kZh8eDu"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-cp3rsVqI2Io9mLE6TB"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-6Mjq47rigak7BGY5CN"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-ZnmkEesO58qXHuqL7Q"
+    },
+    {
+      "name": "repeating_spell-1_-e313wEHQCq8RnzK9W9_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-dm98KCDKtJLBwuRSNh"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellname",
+      "current": "Find Familiar",
+      "max": "",
+      "id": "-WvDycZ7sLSlcc24Hmx"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-i63EkXhTq50yFjTVq0"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellritual",
+      "current": "1",
+      "max": "",
+      "id": "-FveGCOiohXlezE3oR4"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-JGE8CjMpF2NvaHgncH"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-JxaXwDpyx3V0NWcXKu"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellcastingtime",
+      "current": "1 hour",
+      "max": "",
+      "id": "-t7v6o8TClShfcxtrIi"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellrange",
+      "current": "10 feets",
+      "max": "",
+      "id": "-7pLANrQfMxxpKMEcCb"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-7J4jegNwhyNMo4pOI8"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-NyjybxzdDKSPzb76xf"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-jc5bBUrxxKgJgzh60y"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spelldescription",
+      "current": "You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.\n\nAdditional {@filter animal form choices may be available at the DM's discretion.}\n\nYour familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.\n\nWhen the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again. As an action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. Whenever the familiar drops to 0 hit points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.\n\nWhile your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deafened and blinded with regard to your own senses.\n\nYou can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.\n\nFinally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.",
+      "max": "",
+      "id": "-WQKI4Hn8zNBkVqhpo5"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-CsIXBZWRyh2tiuOSIV"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-w9TnDfL5p4LGEfiQoa"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-BU7ZQidBfaKR87ozHx"
+    },
+    {
+      "name": "repeating_spell-1_-qdpUQ7CJYtmeaNHmxd_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-tObxBh8onkv5EGhnyr"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellname",
+      "current": "Feather Fall",
+      "max": "",
+      "id": "-V8SLgN2r9SDebSFLPZ"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-4A5kbtH66jusnTQxR9"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-JZYvdn2GKRAg3O17Tm"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-2HRlOI0BN9yTX7inZl"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellschool",
+      "current": "transmutation",
+      "max": "",
+      "id": "-v0Q0b2Y1XNgnY7pfw8"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellcastingtime",
+      "current": "1 reaction",
+      "max": "",
+      "id": "-FaNCIhfX8rmD6oPyzg"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-WAnIVIX2Gkw5L0wMuY"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellduration",
+      "current": "1 minute",
+      "max": "",
+      "id": "-tgNcb1deHaCeOFouNh"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-H5VnZU69saV6l9E4gZ"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-wEvZIEJF2QNIvHkkMg"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spelldescription",
+      "current": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.",
+      "max": "",
+      "id": "-wxQrL9Uf6YUeXTfIYl"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-nvAxvkjolrNkjxkzqX"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-A0sG4yyY1MeQU5RiWi"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-yGYMLL1jStfBqA0wU0"
+    },
+    {
+      "name": "repeating_spell-1_-pMuwaxlQNbetD5LW1J_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-KpYINGUECMh3r7b2Lj"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellname",
+      "current": "Identify",
+      "max": "",
+      "id": "-2qpsmxvJ0ORZhJtx6q"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-EHnJbc6Tb0sVlt69Dg"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellritual",
+      "current": "1",
+      "max": "",
+      "id": "-NoaODoEpbuIJM0K94K"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-f33xANKhulrLktzpcy"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellschool",
+      "current": "divination",
+      "max": "",
+      "id": "-2ZroJWnMfpyUd6QUHo"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellcastingtime",
+      "current": "1 minute",
+      "max": "",
+      "id": "-hWEshdIsLt4pKM3pfV"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-QQXKPkFGSNiVnU1NHO"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-xoL7jEdMKBwu7u9yMw"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-8FiMnzVRoIijP3TEly"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-4Cqxb9eixPTaOA66Qj"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spelldescription",
+      "current": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\n\nIf you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.",
+      "max": "",
+      "id": "-Wz7gLt40z4f6j5k06E"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-KBYmDotuNsVZSzIMIG"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-vFUkd9ig173PTdhlsc"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-RlwBkDPD6LLJFF2B4g"
+    },
+    {
+      "name": "repeating_spell-1_-PeGvCx79ORaVrprH37_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-1Yt0vWlkrUqUy5FHzk"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellname",
+      "current": "Mage Armor",
+      "max": "",
+      "id": "-fooiAis06YBStIIpRv"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-C8uGAyetEeAvuyg7rx"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-jnWWePDnOF0w9gGkD1"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-stJSDjMpQuVPyR5pX1"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellschool",
+      "current": "abjuration",
+      "max": "",
+      "id": "-hgH4r2GG6YNssAAVUG"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-j26ehe6Udu1IqLlMmQ"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-NZZaLDYobLzMZqOlX0"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellduration",
+      "current": "8 hours",
+      "max": "",
+      "id": "-UPXo2OfXVFceFW1yIH"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-rkrLYmcOVcNG9cfhBI"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-0mlmT2e2FL6H5j7INw"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spelldescription",
+      "current": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+      "max": "",
+      "id": "-6EA27Atk8iSLq1GPtx"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-CeJQF1UNliVQlr8nhB"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-TqM7clp6cpKbwsrmen"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-L07pv1BiviB7fMg4Al"
+    },
+    {
+      "name": "repeating_spell-1_-ClkePyj4Sqv2JEWd3m_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-q8SlNis5OCwicP1XBF"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellname",
+      "current": "Magic Missile",
+      "max": "",
+      "id": "-XaBQwDt3SjCiubzFRS"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-lC00hWQtSyqUzMDmCY"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-PZzJBPofE9VywfyjKK"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-ngIJoyYZ9S7zwRyX9I"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellschool",
+      "current": "V",
+      "max": "",
+      "id": "-1cNsAVUkAHzRZc3T2b"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-J8u48lobZmP1LqYimz"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellrange",
+      "current": "120 feets",
+      "max": "",
+      "id": "-ytDSFRxqTE3WQxm9ui"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-zjghnALLnFmJm3YcpT"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-sWkPEJ7njQspYb49xd"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-XFI2FtpGZv6p6xznPF"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spelldescription",
+      "current": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+      "max": "",
+      "id": "-ca7FA75W1o4Il135df"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-GCkAEMrBRAutsx5S55"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-0by9jNn0ldvpntRz6B"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-yk1MqqJchGddj2SU1Y"
+    },
+    {
+      "name": "repeating_spell-1_-H5RlSafnBDdJv8mEFg_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-MVcL6GOZetlcnuWAXB"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellname",
+      "current": "Shield",
+      "max": "",
+      "id": "-H1vWLNtar40nrfhMtq"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-VZXuTqWMSlNHcKzIOU"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-sdJVDtDd6RKTHQ5996"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-D56x08mc3xQIQ4IQf1"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellschool",
+      "current": "abjuration",
+      "max": "",
+      "id": "-xRbZMlfdzi8SYK2JnJ"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellcastingtime",
+      "current": "1 reaction",
+      "max": "",
+      "id": "-ogpw6DO6sYkS921ZcN"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellrange",
+      "current": "Self",
+      "max": "",
+      "id": "-hNj4PN9WHZ3STzGYLm"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellduration",
+      "current": "1 round",
+      "max": "",
+      "id": "-ZmWNGmMpdr650IFKXH"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-WogAj3aSEcOywsvIbq"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-BYzOJ6hhkbRKpVJNx4"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spelldescription",
+      "current": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "max": "",
+      "id": "-O8zAZrHeQ6dSBYQNyi"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-1mX1MQ5I8dMDq0Yb5n"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-TVa1om51l4e7HUhAcx"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-tVg0bjbdjIDoqiWy87"
+    },
+    {
+      "name": "repeating_spell-1_-2bMamVWt9HPzjz7ved_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-f1LmI7QPqgvJtUpvGD"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellname",
+      "current": "Unseen Servant",
+      "max": "",
+      "id": "-KYeQelMSN7Q8BlxGtJ"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-4HBGPsjCJO2I3fL59y"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellritual",
+      "current": "1",
+      "max": "",
+      "id": "-L34aCSWOKpnGFKca8x"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-OOeUDUrvlu4USr70El"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-XuLCXn3CG81SEgk41x"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-WMo5CZk3tqqd2lGZTv"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-6lOz2bYiHu68xPbQCN"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellduration",
+      "current": "1 hour",
+      "max": "",
+      "id": "-PdJcDBev7hFzOscZRV"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-K727QiwWTrEHddpkDq"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-uQLHs4QRnV930YlMc7"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spelldescription",
+      "current": "This spell creates an invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.\n\nOnce on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.\n\nIf you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.",
+      "max": "",
+      "id": "-KX9IJBEsBHYMYKTpdn"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-hDnvCDYesguHfBNG7o"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-H9CwxaNkX84T6waO2X"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-nQqtfsDPFvvNrwtmql"
+    },
+    {
+      "name": "repeating_spell-1_-F8p002MdPbpiERRpDg_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-wbplJcIqG8fHjcF0Qe"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellname",
+      "current": "Silvery Barbs",
+      "max": "",
+      "id": "-aonjM19JTaDLH431T5"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-hVz6nhnm6ecJiZb73I"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-6QloKlPdcpD6tBE6rT"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-WA1P8pOUJAb1C0N12G"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellschool",
+      "current": "E",
+      "max": "",
+      "id": "-qWkBbnEJs9dLGy9kOt"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellcastingtime",
+      "current": "1 reaction",
+      "max": "",
+      "id": "-9r2evgjJmxgrkJlSgG"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-dDsFYpqLy8jNGRyYLh"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-osEc5CeJmdERB5xrDL"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-5tBLncTxqsZcC7TUqx"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellsource",
+      "current": "SCC",
+      "max": "",
+      "id": "-Xc3OR3mE1Y3quzmKAv"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spelldescription",
+      "current": "You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the d20 and use the lower roll.\n\nYou can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time.",
+      "max": "",
+      "id": "-cBtwquF12kgR8i3U9Q"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-LIu7w8sPQTFjwGyHrP"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-YZ1hcaAkK5XGgVd4LZ"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-GExx67p8WNoRWGKZ5s"
+    },
+    {
+      "name": "repeating_spell-1_-c6vWXKNF6pkcUtrgWA_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-ebkr39ShXopQecOedC"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellname",
+      "current": "Tasha's Hideous Laughter",
+      "max": "",
+      "id": "-El2QZ6rZIPbVUaNiBo"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-tprBzvDns4z25jBl3M"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-QM1XhNHFzUJE2I4oQS"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-qvsa4uQy8JtxLB2inA"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellschool",
+      "current": "E",
+      "max": "",
+      "id": "-DTZN9u2XPFgOPU0GXX"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-L2G9AK1CSyOjNM92FP"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellrange",
+      "current": "30 feets",
+      "max": "",
+      "id": "-NAv9OGfccp2DRCGGNq"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellduration",
+      "current": "Concentration, up to 1 minute",
+      "max": "",
+      "id": "-34x82582ewA3IurOfG"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spelllevel",
+      "current": 1,
+      "max": "",
+      "id": "-kTSyK8FAJVnMnRuxbB"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-FG5hGOl9RFtoG8YnoJ"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spelldescription",
+      "current": "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.\n\nAt the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends.",
+      "max": "",
+      "id": "-7SOIFwr6gem8q4Kxjf"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-n7BDTS4zfQoZrHH0O6"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-MVdZ5Gt6mKjjvMoQE1"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-ult7nJgRW578DXgjyx"
+    },
+    {
+      "name": "repeating_spell-1_-xK3SAatwbNGT5QtsPP_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-PZWLFlkklyED1h26iv"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellname",
+      "current": "Mirror Image",
+      "max": "",
+      "id": "-eHxWPFtvpcchWuiMKH"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-gIGmyJoKxwagKo3vr9"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-zQMZyka1ShkAdEyhCH"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-aFuS4n5mMyum2xWJCC"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellschool",
+      "current": "illusion",
+      "max": "",
+      "id": "-JJcBooP5ruYj6slsVv"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-hNSuEUMwGtQNyBChZd"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellrange",
+      "current": "Self",
+      "max": "",
+      "id": "-dzxiaxVktpF0cWsRmn"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellduration",
+      "current": "1 minute",
+      "max": "",
+      "id": "-5XI5Nprp3bhk4Ucdfv"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-Psfi4FY1JUwfPB4S8L"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-43V8Tg5xlpjUeUVAS3"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spelldescription",
+      "current": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.\n\nEach time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.\n\nIf you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.\n\nA duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.\n\nA creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.",
+      "max": "",
+      "id": "-3W8HZsH73RTfHzFmun"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-ffaalXTdNHXXCGOldp"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-3LtiLWNhFbysdR80I3"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-dLXTwcpAXMYcsrqx5Z"
+    },
+    {
+      "name": "repeating_spell-2_-XK5CjgyOAp8lYLAqfR_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-zAibLdK8NBePn3Vac6"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellname",
+      "current": "Misty Step",
+      "max": "",
+      "id": "-JlVA8cmmI0QrfLre4M"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-mXJGLl8DIZITqWRW2w"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-Naa6YCXZNIj4liTzIq"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-Oxt4C0rXplbXmqLznT"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-PXbeVcRlg6myv8HZv5"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellcastingtime",
+      "current": "1 bonus action",
+      "max": "",
+      "id": "-xlF4IfhC9cnOJ5osCq"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellrange",
+      "current": "Self",
+      "max": "",
+      "id": "-kwnF0BN0qQtCuwKIiM"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-AMHjBH4ZZ0wUBwvnLG"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-06nXF8hfNdt0H6KdEX"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-tuAkULruHnYL8gbesu"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spelldescription",
+      "current": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "max": "",
+      "id": "-Cu1oHqos2jPZwnTr3N"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-qWWeF4QYRN3Tv0XXYb"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-47slR48euo3wTyL5IG"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-bwLkm913gmcbOMYHFE"
+    },
+    {
+      "name": "repeating_spell-2_-WuUwo1TFUBy1sQMy0Q_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-3CyZlOzQOQSIx1xQGB"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellname",
+      "current": "Web",
+      "max": "",
+      "id": "-YQBJZ5wCRggqwgXGm2"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-uzGZ62Q1Mg7GZGXxNo"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-kVt4QA0zbNZw8QrwCO"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-fbRmoSfKD1GmTWmDxa"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-AtvzP7LghpYeoZSjSU"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-bw68t2oQnkcFE9rLtJ"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-ljZLXGheGX7NcV0MHt"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellduration",
+      "current": "Concentration, up to 1 hour",
+      "max": "",
+      "id": "-siIS11vtAOMmflFNeA"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-PN9xMmakb73XFBnfrz"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-1TVRRn0CM6Zn97eRm3"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spelldescription",
+      "current": "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.\n\nIf the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.\n\nEach creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.\n\nA creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.\n\nThe webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.",
+      "max": "",
+      "id": "-a28VBSMAAcJ4DWkjYC"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-ykhkbS6jPLQ33yMAAB"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-1g8ixwgRvxKNq1kA9p"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-XvOcZBkrkgRBx235Yt"
+    },
+    {
+      "name": "repeating_spell-2_-COC4lu1Sa1UTjZrkTu_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-nmJHhRH2r1HuvreOPz"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellname",
+      "current": "Levitate",
+      "max": "",
+      "id": "-gJIprA2iNEnYTc5yIA"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-aBhc6lqxqyyRL6bqHE"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-4At9toaV0rMqE3L2g6"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-LQPKnsB2iSqAz8kdkG"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellschool",
+      "current": "transmutation",
+      "max": "",
+      "id": "-w1gPSP5tG63TZR2vf2"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-U59TNuwjWnrOCBE1Tv"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-V8kK1auc5yUnKkKkD8"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellduration",
+      "current": "Concentration, up to 10 minutes",
+      "max": "",
+      "id": "-zfggL9yXQM92agZIsv"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-uQqxWZ8JhjXV1LjDY9"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-VHNAmMWmoR2agiwMmO"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spelldescription",
+      "current": "One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.\n\nThe target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.\n\nWhen the spell ends, the target floats gently to the ground if it is still aloft.",
+      "max": "",
+      "id": "-3Utd39pupVgjqPbVrb"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-1WhOp0klSG8HIqDRI2"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-L0TIxAbtdLYP7mx2i3"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-fD1J7lGD1gDdBI5uOS"
+    },
+    {
+      "name": "repeating_spell-2_-EwkgOtSZDzZUxEjZb0_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-X34Bo0b9o35oOLY4Jd"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellname",
+      "current": "Suggestion",
+      "max": "",
+      "id": "-2lScBdIa7AS6dKZkZI"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-prPusXtATzZRK3dESD"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-bK5UaGX4QYr2vbwf8F"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-EkNyMOmT3hGOpUDgn8"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellschool",
+      "current": "E",
+      "max": "",
+      "id": "-lrWJlMkW5KfqE9PHtE"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-xGrCg3tjRo4VErfbW5"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellrange",
+      "current": "30 feets",
+      "max": "",
+      "id": "-yB2B1mf35XjUuLoYK6"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellduration",
+      "current": "Concentration, up to 8 hours",
+      "max": "",
+      "id": "-8WPTPQAB5447Qb9pIz"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-Be7fd31aNK69oaAMAe"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-24aXfFMWJrtRBWVFXX"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spelldescription",
+      "current": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.\n\nThe target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.\n\nIf you or any of your companions damage the target, the spell ends.",
+      "max": "",
+      "id": "-P5eMQ1rHmBvBk3P02a"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-7o2olFDFxM5xUD2PXe"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-XnWcuDAA9qknBKqaJJ"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-WIKYpLPUaxUSL0m7PO"
+    },
+    {
+      "name": "repeating_spell-2_-5YU41LRhHBbjOWBxGj_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-D5mdmwfrSm076UEqfs"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellname",
+      "current": "Vortex Warp",
+      "max": "",
+      "id": "-OlC6EkYWA6jOTRWfOm"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-z2mgdnMcsrqtRZoLSb"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-A627uBX8AYRhaXy2Ro"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-gDEFpyaPRI7x4I7lXR"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellschool",
+      "current": "conjuration",
+      "max": "",
+      "id": "-TmjafSUFGx7Hx60Ujy"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-QGuxehFrWUEqL2k4P3"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellrange",
+      "current": "90 feets",
+      "max": "",
+      "id": "-UurgRhNxKDr8ciN7br"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-PdtMAdOeFNyTT3dP0b"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-J8Ra5623a2NFS74cp7"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellsource",
+      "current": "SCC",
+      "max": "",
+      "id": "-vvqaNHO9qdyZABTtlJ"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spelldescription",
+      "current": "You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.",
+      "max": "",
+      "id": "-kK9j0f0WGUHN1o3I7h"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-nUbZryLDw9dLrHQcrD"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-t343HEP56UuxGj9Qks"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-aQLSH9K3eTMdhDcpfB"
+    },
+    {
+      "name": "repeating_spell-2_-DyGrkkEZOBBEx5Bk37_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-PUm9qlI51K0u8NzvKf"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellname",
+      "current": "Rope Trick",
+      "max": "",
+      "id": "-3lCrMkSFUygsCFz0sd"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-768jvk33y4rukIChD3"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-WMdl2dXyz200fc17QY"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-lVovSF56fhHYwe7Dro"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellschool",
+      "current": "transmutation",
+      "max": "",
+      "id": "-jeXis8anoTiWq3XHhl"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-P3Mw3ysZnVjnURhFBo"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellrange",
+      "current": "Touch",
+      "max": "",
+      "id": "-0hCTfeF3G8WUsjeiYS"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellduration",
+      "current": "1 hour",
+      "max": "",
+      "id": "-gDVJDyxKVesTho2paB"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spelllevel",
+      "current": 2,
+      "max": "",
+      "id": "-27JnmHIr5Z0HnkPpTo"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-q3YeS1XNmXsFcnXcOl"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spelldescription",
+      "current": "You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends.\n\nThe extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space.\n\nAttacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope.\n\nAnything inside the extradimensional space drops out when the spell ends.",
+      "max": "",
+      "id": "-VvA297G9ic9KqTdoi2"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-zdj5mp1KZId2TtpaNI"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-3GtZlXlqrf8fkeJ6yT"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-6wJMgAnCiFA2vdBIWo"
+    },
+    {
+      "name": "repeating_spell-2_-87gxM4qiBFWS38zx8w_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-YnnpXKzBKhhPK5ZqpM"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellname",
+      "current": "Counterspell",
+      "max": "",
+      "id": "-3ZCPo2XCVdaceTSVtT"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-Mng5zxzbMaNzFNngcP"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-js0G7uOETg9hr6LbdV"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-uSsISsX3bLTYGqpyJE"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellschool",
+      "current": "abjuration",
+      "max": "",
+      "id": "-FRjK7mGIavmDR4g74F"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellcastingtime",
+      "current": "1 reaction",
+      "max": "",
+      "id": "-NljKp8xv4GkCaAfSwD"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellrange",
+      "current": "60 feets",
+      "max": "",
+      "id": "-Dwb9id0WlmrfBTmf6l"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-pyQOcw36H0nA5WZUPH"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spelllevel",
+      "current": 3,
+      "max": "",
+      "id": "-867l01Ca8mkYPvcpwY"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-je3LE4StkRhKRlY3CR"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spelldescription",
+      "current": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+      "max": "",
+      "id": "-Wv8dOgYJ2cRy1TJDNJ"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-uLZSOi7Zt5LDvxBoRF"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-S7zVSQLeEqbDzfkbYl"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-Q3s6BJM96xfP5UdARf"
+    },
+    {
+      "name": "repeating_spell-3_-XxAKXTh5H0XuxU2kbe_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-YikHD67IgJoi6mKfha"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellname",
+      "current": "Dispel Magic",
+      "max": "",
+      "id": "-LPocl8CmgANZYYKYXd"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-szpRkkoeitII1XFsus"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-3mVCGidZ3mJEtLKU6Q"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellconcentration",
+      "current": "No",
+      "max": "",
+      "id": "-GDCVAgwsMsAmLE0Fkq"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellschool",
+      "current": "abjuration",
+      "max": "",
+      "id": "-0MmyK5GE8a8awgnqEF"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-bdyERIxMLtF9qrywWq"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellrange",
+      "current": "120 feets",
+      "max": "",
+      "id": "-12J7ig0uRUuY685dfQ"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellduration",
+      "current": "Instantaneous",
+      "max": "",
+      "id": "-w22SbqLHMlGMJFDRN5"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spelllevel",
+      "current": 3,
+      "max": "",
+      "id": "-Kmpq1PKqrRw4dTb5KR"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-ZIxsAoVlyNN2C8P3R2"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spelldescription",
+      "current": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.",
+      "max": "",
+      "id": "-lOFAKDAx05Ss1Aori1"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-IxmRXd68RqElgh1x18"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-noHwa7iepwKUjva0Uh"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-sKdGYp0VLHaxP41lJC"
+    },
+    {
+      "name": "repeating_spell-3_-FEjd1EymgxlIcdr65m_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-TkBDBxURgUHlPKyEDT"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellname",
+      "current": "Hypnotic Pattern",
+      "max": "",
+      "id": "-t6LOAfoLSsTZdCViDe"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellprepared",
+      "current": "0",
+      "max": "",
+      "id": "-C0kOQxrP8OeQeIRWcT"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-ISKdvYpXdDeafJrC66"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-9ackS6P6WG6WClTo0q"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellschool",
+      "current": "illusion",
+      "max": "",
+      "id": "-VMHGOEX5SAtLnizr0i"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-zA6elHZ2CGS3jLH3uC"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellrange",
+      "current": "120 feets",
+      "max": "",
+      "id": "-FXEhQrvoXDyj1DBTTj"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellduration",
+      "current": "Concentration, up to 1 minute",
+      "max": "",
+      "id": "-AlQ8Q4WQ49KWyNelvE"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spelllevel",
+      "current": 3,
+      "max": "",
+      "id": "-XtU3IPtVu9zBV6uV6s"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-kmOY7ZayC0kca8Nf8i"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spelldescription",
+      "current": "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.\n\nThe spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.",
+      "max": "",
+      "id": "-4S5jKsVVVtshEnUnAB"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-oRpoazzH9aaKt63rLN"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-5PedbaajfF3Xv8wDED"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-HsNkBE5mwcuzU4yW0D"
+    },
+    {
+      "name": "repeating_spell-3_-vY9zu2U5imsKiqPptj_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-J41DRtAfClkMipXcoz"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellname",
+      "current": "Slow",
+      "max": "",
+      "id": "-wewyLZ7UJR6e760qrN"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellprepared",
+      "current": "1",
+      "max": "",
+      "id": "-9Axcy8juWleOaX6dj6"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellritual",
+      "current": "0",
+      "max": "",
+      "id": "-16MtgtX7IZUSPYxbmG"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellconcentration",
+      "current": "Yes",
+      "max": "",
+      "id": "-CkVb824UeHExh4TxRy"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellschool",
+      "current": "transmutation",
+      "max": "",
+      "id": "-3AL7YLHtPYEBRua1e0"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellcastingtime",
+      "current": "1 action",
+      "max": "",
+      "id": "-6FEdPkFjMNovlAPyd5"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellrange",
+      "current": "120 feets",
+      "max": "",
+      "id": "-WIV8BNAAv85OOeUHzp"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellduration",
+      "current": "Concentration, up to 1 minute",
+      "max": "",
+      "id": "-qhZPP0midQh0qiQfUH"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spelllevel",
+      "current": 3,
+      "max": "",
+      "id": "-52sEH4XdgXYZJPwfjt"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellsource",
+      "current": "PHB",
+      "max": "",
+      "id": "-QS3KMykeK5nndKwQ0F"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spelldescription",
+      "current": "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.\n\nAn affected target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.\n\nIf the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.\n\nA creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it.",
+      "max": "",
+      "id": "-mY8bnJAPu463yOpbC0"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellcomp_v",
+      "current": "0",
+      "max": "",
+      "id": "-grN6nY5MJwBiDqxkWb"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellcomp_s",
+      "current": "0",
+      "max": "",
+      "id": "-6NsonhBIIeQ52Z293f"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellcomp_m",
+      "current": "0",
+      "max": "",
+      "id": "-F5hcGZmGTdzMCcNRUc"
+    },
+    {
+      "name": "repeating_spell-3_-V4nkKCyQS5ON8fJGWD_spellcomp_materials",
+      "current": "",
+      "max": "",
+      "id": "-i7huDfhCDylF6CHvXc"
+    }
+  ],
+  "abilities": []
+}

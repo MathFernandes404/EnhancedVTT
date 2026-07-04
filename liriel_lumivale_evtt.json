@@ -1,0 +1,3152 @@
+{
+  "_exportVersion": 5,
+  "_exportedAt": "2026-06-27T23:35:35.005Z",
+  "character": {
+    "name": "Liriel Lumivale",
+    "bio": "",
+    "gmnotes": "",
+    "avatar": "https://files.d20.io/images/492017468/2I821hdbkGuNjmWOXq0jZA/med.png?1782567793",
+    "inplayerjournals": "-OlKCaL6QE_x1zdufP5m",
+    "controlledby": "-OlKCaL6QE_x1zdufP5m",
+    "defaulttoken": 1782567839524,
+    "tags": "",
+    "archived": false,
+    "attrorder": "",
+    "abilorder": "",
+    "mancerdata": "{}",
+    "expansion": null,
+    "expansioninitials": "",
+    "expansionid": null,
+    "charactersheetname": "ogl5e",
+    "hidden": false,
+    "statusmarkers": "",
+    "inParty": false,
+    "account_id": 4418872,
+    "character": {
+      "id": "-1871366118_16214771",
+      "name": "Iti Aranii",
+      "tags": "[]"
+    },
+    "createdBy": "-OlKCaL6QE_x1zdufP5m",
+    "id": "-1871366118_16214771",
+    "nexus_character_id": "",
+    "nexus_slug": "",
+    "ownedBy": "-OlKCaL6QE_x1zdufP5m",
+    "vault_character_id": 16214771
+  },
+  "defaulttoken": {
+    "imgsrc": "https://files.d20.io/images/492017521/hyHwOVywdAizmD2i_3VoWQ/med.webp?1782567839",
+    "width": 70,
+    "height": 70,
+    "name": "Liriel Lumivale"
+  },
+  "attributes": [
+    {
+      "name": "kingdom_culture_action",
+      "current": "%{Liriel Lumivale|kingdom-culture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_economy_action",
+      "current": "%{Liriel Lumivale|kingdom-economy-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_loyalty_action",
+      "current": "%{Liriel Lumivale|kingdom-loyalty-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_stability_action",
+      "current": "%{Liriel Lumivale|kingdom-stability-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_agriculture_action",
+      "current": "%{Liriel Lumivale|kingdom-agriculture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_arts_action",
+      "current": "%{Liriel Lumivale|kingdom-arts-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_boating_action",
+      "current": "%{Liriel Lumivale|kingdom-boating-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_defense_action",
+      "current": "%{Liriel Lumivale|kingdom-defense-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_engineering_action",
+      "current": "%{Liriel Lumivale|kingdom-engineering-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_exploration_action",
+      "current": "%{Liriel Lumivale|kingdom-exploration-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_folklore_action",
+      "current": "%{Liriel Lumivale|kingdom-folklore-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_industry_action",
+      "current": "%{Liriel Lumivale|kingdom-industry-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_intrigue_action",
+      "current": "%{Liriel Lumivale|kingdom-intrigue-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_magic_action",
+      "current": "%{Liriel Lumivale|kingdom-magic-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_politics_action",
+      "current": "%{Liriel Lumivale|kingdom-politics-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_scholarship_action",
+      "current": "%{Liriel Lumivale|kingdom-scholarship-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_statecraft_action",
+      "current": "%{Liriel Lumivale|kingdom-statecraft-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_trade_action",
+      "current": "%{Liriel Lumivale|kingdom-trade-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_warfare_action",
+      "current": "%{Liriel Lumivale|kingdom-warfare-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_wilderness_action",
+      "current": "%{Liriel Lumivale|kingdom-wilderness-action}",
+      "max": ""
+    },
+    {
+      "name": "army_scouting_action",
+      "current": "%{Liriel Lumivale|army-scouting-action}",
+      "max": ""
+    },
+    {
+      "name": "army_maneuver_action",
+      "current": "%{Liriel Lumivale|army-maneuver-action}",
+      "max": ""
+    },
+    {
+      "name": "army_morale_action",
+      "current": "%{Liriel Lumivale|army-morale-action}",
+      "max": ""
+    },
+    {
+      "name": "army_ranged_action",
+      "current": "%{Liriel Lumivale|army-ranged-action}",
+      "max": ""
+    },
+    {
+      "name": "filter_traits_by",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "hitdieroll",
+      "current": "10",
+      "max": ""
+    },
+    {
+      "name": "showleveler",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "invalidXP",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "kingmaker_tab",
+      "current": "nav-tabs-kingmaker--settings",
+      "max": ""
+    },
+    {
+      "name": "sheet_version",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "version",
+      "current": 4.21,
+      "max": ""
+    },
+    {
+      "name": "appliedUpdates",
+      "current": "upgrade_to_4_2_1,fix_spell_attacks,fix_pc_skill_and_saving_rolls,fix_pc_saving_rolls,fix_pc_skill_and_saving_rolls_with_expertise,fix_pc_skill_and_saving_rolls_with_reliable_talent,enable_powerful_build_on_existing_characters,fix_pc_global_critical_damage_rolls,fix_pc_global_critical_stacked_damage_rolls,fix_pc_skill_rolls_tooltips,fix_pc_global_statical_critical_damage,fix_spell_school_ouput,fix_pc_global_multiple_statical_critical_damage,fix_spell_savedc_output,fix_spellpoints,fix_advantage_query,fix_attacks_spelllink,fix_pc_skills_when_jack_and_odd_prof,fix_armor_stealth_penalty,fix_pc_printedskills",
+      "max": ""
+    },
+    {
+      "name": "strength_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{strength-save-u}}} {{mod=@{strength_save_bonus}}} {{r1=[[@{d20}+@{strength_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{strength_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "dexterity_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{dexterity-save-u}}} {{mod=@{dexterity_save_bonus}}} {{r1=[[@{d20}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "constitution_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{constitution-save-u}}} {{mod=@{constitution_save_bonus}}} {{r1=[[@{d20}+@{constitution_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{constitution_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{intelligence-save-u}}} {{mod=@{intelligence_save_bonus}}} {{r1=[[@{d20}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{wisdom-save-u}}} {{mod=@{wisdom_save_bonus}}} {{r1=[[@{d20}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "charisma_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{charisma-save-u}}} {{mod=@{charisma_save_bonus}}} {{r1=[[@{d20}+@{charisma_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{charisma_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "honor_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{honor-save-u}}} {{mod=@{honor_save_bonus}}} {{r1=[[@{d20}+@{honor_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{honor_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "sanity_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{sanity-save-u}}} {{mod=@{sanity_save_bonus}}} {{r1=[[@{d20}+@{sanity_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{sanity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "athletics_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{athletics-u}}} {{mod=@{athletics_bonus}}} {{r1=[[@{d20}+3[Proficiency]+1[strength]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+1[strength]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "acrobatics_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{acrobatics-u}}} {{mod=@{acrobatics_bonus}}} {{r1=[[@{d20}+-1[dexterity]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "sleight_of_hand_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{sleight_of_hand-u}}} {{mod=@{sleight_of_hand_bonus}}} {{r1=[[@{d20}+-1[dexterity]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "stealth_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{stealth-u}}} {{mod=@{stealth_bonus}}} {{r1=[[@{d20}+-1[dexterity]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "arcana_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{arcana-u}}} {{mod=@{arcana_bonus}}} {{r1=[[@{d20}+-1[intelligence]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "history_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{history-u}}} {{mod=@{history_bonus}}} {{r1=[[@{d20}+-1[intelligence]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "investigation_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{investigation-u}}} {{mod=@{investigation_bonus}}} {{r1=[[@{d20}+-1[intelligence]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "nature_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{nature-u}}} {{mod=@{nature_bonus}}} {{r1=[[@{d20}+-1[intelligence]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "religion_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{religion-u}}} {{mod=@{religion_bonus}}} {{r1=[[@{d20}+-1[intelligence]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+-1[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "animal_handling_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{animal_handling-u}}} {{mod=@{animal_handling_bonus}}} {{r1=[[@{d20}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "insight_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{insight-u}}} {{mod=@{insight_bonus}}} {{r1=[[@{d20}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "medicine_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{medicine-u}}} {{mod=@{medicine_bonus}}} {{r1=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "perception_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{perception-u}}} {{mod=@{perception_bonus}}} {{r1=[[@{d20}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "survival_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{survival-u}}} {{mod=@{survival_bonus}}} {{r1=[[@{d20}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "deception_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{deception-u}}} {{mod=@{deception_bonus}}} {{r1=[[@{d20}+4[charisma]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+4[charisma]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "intimidation_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{intimidation-u}}} {{mod=@{intimidation_bonus}}} {{r1=[[@{d20}+4[charisma]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+4[charisma]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "performance_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{performance-u}}} {{mod=@{performance_bonus}}} {{r1=[[@{d20}+4[charisma]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+4[charisma]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "persuasion_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{persuasion-u}}} {{mod=@{persuasion_bonus}}} {{r1=[[@{d20}+3[Proficiency]+4[charisma]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+3[Proficiency]+4[charisma]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_roll",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_crit",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_type",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "queryadvantage",
+      "current": "{{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}",
+      "max": ""
+    },
+    {
+      "name": "stealth_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "other_tool",
+      "current": "Lira",
+      "max": ""
+    },
+    {
+      "name": "other_languages",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_armor",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_weapon",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "other_other",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "mancer_confirm_flag",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "mancer_cancel",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "l1mancer_status",
+      "current": "completed",
+      "max": ""
+    },
+    {
+      "name": "class",
+      "current": "Paladin",
+      "max": ""
+    },
+    {
+      "name": "hitdie_final",
+      "current": "@{hitdietype}",
+      "max": ""
+    },
+    {
+      "name": "level",
+      "current": 5,
+      "max": ""
+    },
+    {
+      "name": "caster_level",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "class_display",
+      "current": "Paladin 5",
+      "max": ""
+    },
+    {
+      "name": "hit_dice",
+      "current": 5,
+      "max": 5
+    },
+    {
+      "name": "pb",
+      "current": "3",
+      "max": ""
+    },
+    {
+      "name": "jack",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "pbd_safe",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "lvl1_slots_total",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "lvl2_slots_total",
+      "current": 2,
+      "max": ""
+    },
+    {
+      "name": "lvl3_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl4_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl5_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl6_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl7_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl8_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "lvl9_slots_total",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "spell_attack_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "spell_save_dc",
+      "current": 15,
+      "max": ""
+    },
+    {
+      "name": "jack_bonus",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "jack_attr",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "initiative_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "strength_save_bonus",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "dexterity_save_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "constitution_save_bonus",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "charisma_save_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "honor_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "sanity_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "death_save_bonus",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "athletics_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "acrobatics_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "sleight_of_hand_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "arcana_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "history_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "investigation_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "nature_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "religion_bonus",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "animal_handling_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "insight_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "medicine_bonus",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "perception_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "survival_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "deception_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "intimidation_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "performance_bonus",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "persuasion_bonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "death_save_roll",
+      "current": "@{wtype}&{template:simple} {{rname=^{death-save-u}}} {{mod=@{death_save_bonus}}} {{r1=[[@{d20}+@{death_save_bonus}@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{death_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "passive_wisdom",
+      "current": 14,
+      "max": ""
+    },
+    {
+      "name": "hero_points",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "race",
+      "current": "Celestial (Humano)",
+      "max": ""
+    },
+    {
+      "name": "race_display",
+      "current": "Celestial (Humano)",
+      "max": ""
+    },
+    {
+      "name": "creaturetype",
+      "current": "humanoide",
+      "max": ""
+    },
+    {
+      "name": "options-class-selection",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "alignment",
+      "current": "LB",
+      "max": ""
+    },
+    {
+      "name": "background",
+      "current": "Herói",
+      "max": ""
+    },
+    {
+      "name": "options-flag-personality",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "options-flag-ideals",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "options-flag-bonds",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "options-flag-flaws",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlSoBh65RyoSkmLYwyL_name",
+      "current": "⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlSoBh65RyoSkmLYwyL_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4d5WIzIVTwBKB7rZ_name",
+      "current": "⌞⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⌟",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4d5WIzIVTwBKB7rZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4lZiAb80AwZfEsPQ_name",
+      "current": "═══════ CLASSE ══════",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4lZiAb80AwZfEsPQ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "_reporder_repeating_traits",
+      "current": "-OlT59066TV644Ox3AgC,-OlaUHFCAX--xrAUvsXi,-OlaVh78dWJ0yUuE-4H2,-OlT5C54canF9qhcthl1,-OlSoBh65RyoSkmLYwyL,-OlTFUfPw0SKS8riicJP,-Ow18FaEOFD5mdT86bjH,-Ow18S0Qp3L7V6DB9BCN,-Ow18frwN4KbfgReHXhB,-OlT4d5WIzIVTwBKB7rZ,-OlT59bCif4VcpUCp92B,-OlTK630bxtPVVxv8pbI,-OlTP2dQZju8PQnZ4Vw4,-OlTZVwwJ8R32Z01viM1,-Ow19t4cEILVZfDnnhSA,-Ow18zPzOjdhzXYp8LTt,-OlT5B7thxZwO3rAdEJd,-OlT57mDfB8E0SKUzZO4,-OlT4lZiAb80AwZfEsPQ,-OlT6TyttZSM9igiBOCc,-OlTBHyq7OGPQjnrLJa3,-OlTDHYkt1FKBSDZqtEQ,-OlTEGWZpy5xjquO9188,-OlyPalb3UuLlmlyzzmj,-OlyQxUq6JPWdGgXh0ZN,-Ow8QbZAvWnp3ys9JGQM,-Ow8RDfQbjgeJgPwKnjQ,-Ow8SCueJVEmAp8foKCk,-Ow8STmkgn1ZGhvVZkYm,-Ow8SYCwcZJsl69tIUtK,-Ow8StZHu9I2dUYSFO1c,-Ow8TrUdinZhIoNbE4Fo,-Ow8TzM3tiPINHGka43Y,-Ow8U7c5ksAgIkbGZjrX,-Ow8UBNxSJe98eDQcoSe,-OlT5D4FGKscgh9yla8C,-OlT58XSKp6tGBhm1zxg,-OlT5BepE02sGb2MxJfy",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlSoBh65RyoSkmLYwyL_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4d5WIzIVTwBKB7rZ_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT4lZiAb80AwZfEsPQ_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT57mDfB8E0SKUzZO4_name",
+      "current": "⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT57mDfB8E0SKUzZO4_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT58XSKp6tGBhm1zxg_name",
+      "current": "⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT58XSKp6tGBhm1zxg_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT59066TV644Ox3AgC_name",
+      "current": "⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT59066TV644Ox3AgC_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT59bCif4VcpUCp92B_name",
+      "current": "⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT59bCif4VcpUCp92B_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5B7thxZwO3rAdEJd_name",
+      "current": "⌞⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⌟",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5B7thxZwO3rAdEJd_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5BepE02sGb2MxJfy_name",
+      "current": "⌞⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⌟",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5BepE02sGb2MxJfy_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5C54canF9qhcthl1_name",
+      "current": "⌞⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⌟",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5C54canF9qhcthl1_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5D4FGKscgh9yla8C_name",
+      "current": "⌞⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⌟",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT5D4FGKscgh9yla8C_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "tab",
+      "current": "core",
+      "max": ""
+    },
+    {
+      "name": "rtype",
+      "current": "@{queryadvantage}",
+      "max": ""
+    },
+    {
+      "name": "wtype",
+      "current": "@{whispertoggle}",
+      "max": ""
+    },
+    {
+      "name": "global_save_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "global_save_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_skill_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "global_skill_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_attack_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "global_attack_mod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "global_damage_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "global_ac_mod_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "armorwarningflag",
+      "current": "hide",
+      "max": ""
+    },
+    {
+      "name": "customacwarningflag",
+      "current": "hide",
+      "max": ""
+    },
+    {
+      "name": "ac",
+      "current": 20,
+      "max": ""
+    },
+    {
+      "name": "charname_output",
+      "current": "{{charname=@{character_name}}}",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_name",
+      "current": "╰┈➤Nível 1: Sentido Divino",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_source_type",
+      "current": "Paladino: Nível 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_description",
+      "current": "*Fecho os olhos e deixo que o mundo responda: o puro soa como sinos longínquos; o profano, como ferrugem no fio da lâmina. Se houver presença que fira meu voto, eu a encontro.*\n\nVocê pode expandir sua percepção para detectar forças extraplanares. Como uma **Ação**, você abre seus sentidos até o final do seu próximo turno.\n\n**Detecção:** Você sabe a localização de qualquer Celestial, Corruptor (Fiend) ou Morto-vivo a até **18 metros [60 pés]** que não tenha cobertura total.\n\n**Locais:** Você detecta a presença de qualquer local ou objeto que tenha sido consagrado ou conspurcado.\n\n**Usos:** Você pode usar esta característica um número de vezes igual a **1+seu modificador de Carisma**. Você recupera todos os usos gastos ao terminar um **Descanso Longo**.\n\n[a](https://media1.tenor.com/m/B1qv3miMEiYAAAAd/spiderman-no-way-home.gif)",
+      "max": ""
+    },
+    {
+      "name": "whispertoggle",
+      "current": "/w gm ",
+      "max": ""
+    },
+    {
+      "name": "advantagetoggle",
+      "current": "{{query=1}} {{normal=1}} {{r2=[[0d20",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlT6TyttZSM9igiBOCc_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_name",
+      "current": "╰┈➤Nível 1: Cura Pelas Mãos",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_source_type",
+      "current": "Paladino: Nível 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_description",
+      "current": "*Coloco a mão e recordo ao corpo sua forma inteira. Não é milagre; é promessa cumprida. Enquanto eu sustentar o estandarte, a dor não dita o fim. Eu reparto fôlego e ergo os meus._  Você possui uma reserva de poder curativo que se renova com sua fé.*\n\n-   **Poço de Cura:**  Você tem uma reserva de pontos de cura igual a  **5 × seu nível de Paladino**.\n-   **Restaurar Vida:**  Como uma  **Ação Bônus**, você pode tocar uma criatura (ou a si mesmo) e gastar pontos do seu poço para restaurar um número de Pontos de Vida igual aos pontos gastos.\n-   **Curar Aflições:**  Você pode gastar  **5 pontos**  do poço de cura para curar o alvo de uma doença ou neutralizar um veneno que o afete. Você pode curar múltiplas doenças e neutralizar múltiplos venenos com um único uso, gastando pontos separadamente para cada um.\n-   **Remover Condições:**  Você pode gastar  **5 pontos**  para remover uma das seguintes condições do alvo:  **Cego, Enfeitiçado, Surdo, Amedrontado, Paralisado**  ou  **Atordoado**.\n-   **Recuperação:**  Você recupera todos os pontos do seu poço de cura ao terminar um  **Descanso Longo**.\n\n[a](https://i.pinimg.com/originals/b9/4e/65/b94e6514f594a4d9e45687b1c189aa39.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTBHyq7OGPQjnrLJa3_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_name",
+      "current": "╰┈➤Nível 1: Conjuração",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_description",
+      "current": "*Treino a vontade até que obedeça ao gesto e ao símbolo. Quando declaro, o mundo toma forma; quando silencio, o mundo descansa comigo, à espera do próximo chamado._  Você aprendeu a canalizar magia divina através de meditação e oração.*\n\n-   **Preparação de Magias:**  Você prepara a lista de magias disponíveis para conjurar. Escolha um número de magias de Paladino igual ao seu modificador de  **Carisma + metade do seu nível de Paladino**  (mínimo de uma magia). As magias devem ser de níveis para os quais você tenha espaços.\n-   **Espaços de Magia:**  A tabela do Paladino mostra quantos espaços de magia você tem. Você recupera todos os espaços gastos ao terminar um  **Descanso Longo**.\n-   **Atributo de Conjuração:**  **Carisma**  é sua habilidade para conjurar magias. Use-o para definir a CD (8 + Bônus de Proficiência + Mod. Carisma) e ataques de magia.\n-   **Foco de Conjuração:**  Você pode usar um  **Símbolo Sagrado**  como foco de conjuração.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_source_type",
+      "current": "Paladino: Nível 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTDHYkt1FKBSDZqtEQ_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_name",
+      "current": "╰┈➤Nível 1: Maestria em Armas",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_source_type",
+      "current": "Paladino: Nível 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_description",
+      "current": "*Cada arma tem uma voz, e eu aprendi a cantar com todas elas. Onde a lâmina toca, o dever é cumprido._  Seu treinamento marcial permite que você utilize técnicas avançadas com armamentos.*\n\n-   **Armas Escolhidas:**  Escolha  **dois tipos de armas**  com as quais você tenha proficiência (como Espadas Longas e Azagaias).\n-   **Benefício:**  Enquanto estiver empunhando uma arma dos tipos escolhidos, você pode utilizar as  **propriedades de maestria**  associadas a ela.\n-   **Troca:**  Sempre que terminar um  **Descanso Longo**, você pode praticar e substituir os tipos de armas escolhidos por outros.\n════════════════════════\n**Arma:** Martelo de Batalha\n**Maestria:** Push (Empurrar)\n**Arma:** Lança\n**Maestria:** Minar(Sap)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTEGWZpy5xjquO9188_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTFUfPw0SKS8riicJP_name",
+      "current": "═══════ RACIAL ══════",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTFUfPw0SKS8riicJP_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTFUfPw0SKS8riicJP_display_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "constitution_base",
+      "current": "16",
+      "max": ""
+    },
+    {
+      "name": "constitution_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "constitution",
+      "current": 16,
+      "max": ""
+    },
+    {
+      "name": "constitution_mod",
+      "current": 3,
+      "max": ""
+    },
+    {
+      "name": "npc_con_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "base_level",
+      "current": "5",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTK630bxtPVVxv8pbI_name",
+      "current": "══════ TALENTOS  ═════",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTK630bxtPVVxv8pbI_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_name",
+      "current": "╰┈➤Nível 1: Bênção da Aurora",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_description",
+      "current": "Pré-requisito: Nível 1+, Essência Nephilim, Polo Celestial.\n\nComo uma Ação, você toca uma criatura disposta e rola um número de d4 igual ao seu Bônus de Proficiência. A criatura recupera Pontos de Vida iguais ao total rolado. Você pode usar Bênção da Aurora um número de vezes igual ao seu Bônus de Proficiência por Descanso Longo",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_source_type",
+      "current": "Essencia Celestial / Nível 1",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTP2dQZju8PQnZ4Vw4_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "perception_prof",
+      "current": "(@{pb}*@{perception_type})",
+      "max": ""
+    },
+    {
+      "name": "strength_base",
+      "current": "13",
+      "max": ""
+    },
+    {
+      "name": "strength_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "strength",
+      "current": 13,
+      "max": ""
+    },
+    {
+      "name": "strength_mod",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "npc_str_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "weighttotal",
+      "current": 2,
+      "max": ""
+    },
+    {
+      "name": "encumberance",
+      "current": " ",
+      "max": ""
+    },
+    {
+      "name": "dexterity_base",
+      "current": "8",
+      "max": ""
+    },
+    {
+      "name": "dexterity_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "dexterity",
+      "current": 8,
+      "max": ""
+    },
+    {
+      "name": "dexterity_mod",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "npc_dex_negative",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "intelligence_base",
+      "current": "8",
+      "max": ""
+    },
+    {
+      "name": "intelligence_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "intelligence",
+      "current": 8,
+      "max": ""
+    },
+    {
+      "name": "intelligence_mod",
+      "current": -1,
+      "max": ""
+    },
+    {
+      "name": "npc_int_negative",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "wisdom_base",
+      "current": "12",
+      "max": ""
+    },
+    {
+      "name": "wisdom_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "wisdom",
+      "current": 12,
+      "max": ""
+    },
+    {
+      "name": "wisdom_mod",
+      "current": 1,
+      "max": ""
+    },
+    {
+      "name": "npc_wis_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "charisma_base",
+      "current": "19",
+      "max": ""
+    },
+    {
+      "name": "charisma_flag",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "charisma",
+      "current": 19,
+      "max": ""
+    },
+    {
+      "name": "charisma_mod",
+      "current": 4,
+      "max": ""
+    },
+    {
+      "name": "npc_cha_negative",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "speed",
+      "current": "9 mts",
+      "max": ""
+    },
+    {
+      "name": "charisma_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "wisdom_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "intelligence_save_prof",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_description",
+      "current": "*Eu não sangro fácil, e caio ainda mais difícil. Cicatrizes são apenas o mapa de onde o mundo tentou me quebrar e falhou.\"*\n\nSua compleição física é anormalmente densa e resistente, concedendo uma vitalidade que excede os limites naturais da sua espécie.\n\n-   **Vigor Inabalável:**  Seu máximo de Pontos de Vida aumenta em um valor igual a 2 vezes o seu nível de personagem no momento em que você adquire este talento.\n-   **Progressão de Vitalidade:**  Sempre que você ganhar um nível de personagem posteriormente, seu máximo de Pontos de Vida aumenta em 2 pontos adicionais.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_name",
+      "current": "╰┈➤Nível 1: Robusto",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_source",
+      "current": "Talento",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_source_type",
+      "current": "Nível 1: Talento de Origem",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlTZVwwJ8R32Z01viM1_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "spellcasting_ability",
+      "current": "@{charisma_mod}+",
+      "max": ""
+    },
+    {
+      "name": "spell_attack_mod",
+      "current": 0,
+      "max": ""
+    },
+    {
+      "name": "custom_ac_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "hp",
+      "current": "59",
+      "max": "59"
+    },
+    {
+      "name": "kingdom_culture_action",
+      "current": "%{Liriel Lumivale|kingdom-culture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_economy_action",
+      "current": "%{Liriel Lumivale|kingdom-economy-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_loyalty_action",
+      "current": "%{Liriel Lumivale|kingdom-loyalty-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_stability_action",
+      "current": "%{Liriel Lumivale|kingdom-stability-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_agriculture_action",
+      "current": "%{Liriel Lumivale|kingdom-agriculture-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_arts_action",
+      "current": "%{Liriel Lumivale|kingdom-arts-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_boating_action",
+      "current": "%{Liriel Lumivale|kingdom-boating-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_defense_action",
+      "current": "%{Liriel Lumivale|kingdom-defense-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_engineering_action",
+      "current": "%{Liriel Lumivale|kingdom-engineering-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_exploration_action",
+      "current": "%{Liriel Lumivale|kingdom-exploration-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_folklore_action",
+      "current": "%{Liriel Lumivale|kingdom-folklore-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_industry_action",
+      "current": "%{Liriel Lumivale|kingdom-industry-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_intrigue_action",
+      "current": "%{Liriel Lumivale|kingdom-intrigue-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_magic_action",
+      "current": "%{Liriel Lumivale|kingdom-magic-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_politics_action",
+      "current": "%{Liriel Lumivale|kingdom-politics-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_scholarship_action",
+      "current": "%{Liriel Lumivale|kingdom-scholarship-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_statecraft_action",
+      "current": "%{Liriel Lumivale|kingdom-statecraft-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_trade_action",
+      "current": "%{Liriel Lumivale|kingdom-trade-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_warfare_action",
+      "current": "%{Liriel Lumivale|kingdom-warfare-action}",
+      "max": ""
+    },
+    {
+      "name": "kingdom_wilderness_action",
+      "current": "%{Liriel Lumivale|kingdom-wilderness-action}",
+      "max": ""
+    },
+    {
+      "name": "army_scouting_action",
+      "current": "%{Liriel Lumivale|army-scouting-action}",
+      "max": ""
+    },
+    {
+      "name": "army_maneuver_action",
+      "current": "%{Liriel Lumivale|army-maneuver-action}",
+      "max": ""
+    },
+    {
+      "name": "army_morale_action",
+      "current": "%{Liriel Lumivale|army-morale-action}",
+      "max": ""
+    },
+    {
+      "name": "army_ranged_action",
+      "current": "%{Liriel Lumivale|army-ranged-action}",
+      "max": ""
+    },
+    {
+      "name": "cust_classname",
+      "current": "Paladino",
+      "max": ""
+    },
+    {
+      "name": "cust_hitdietype",
+      "current": "10",
+      "max": ""
+    },
+    {
+      "name": "custom_class",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "hitdietype",
+      "current": "10",
+      "max": ""
+    },
+    {
+      "name": "strength_save_prof",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "dexterity_save_prof",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "constitution_save_prof",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "cust_spellcasting_ability",
+      "current": "@{charisma_mod}+",
+      "max": ""
+    },
+    {
+      "name": "cust_spellslots",
+      "current": "half",
+      "max": ""
+    },
+    {
+      "name": "cust_wisdom_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "cust_charisma_save_prof",
+      "current": "(@{pb})",
+      "max": ""
+    },
+    {
+      "name": "persuasion_prof",
+      "current": "(@{pb}*@{persuasion_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZnSrjBhnD9lKykEhm_prof_type",
+      "current": "ARMA",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZnSrjBhnD9lKykEhm_name",
+      "current": "Armas Simples e Armas Marciais",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZnSrjBhnD9lKykEhm_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZo-eVs4MtJIbPIDhd_prof_type",
+      "current": "ARMADURA",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZo-eVs4MtJIbPIDhd_name",
+      "current": "Todas as Armaduras e Escudos",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZo-eVs4MtJIbPIDhd_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "athletics_prof",
+      "current": "(@{pb}*@{athletics_type})",
+      "max": ""
+    },
+    {
+      "name": "insight_prof",
+      "current": "(@{pb}*@{insight_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZo6PdxnXkYuKN4-f5_itemname",
+      "current": "Martelo de Batalha",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZo8OCSNSqrIsNaSxz_itemname",
+      "current": "Escudo",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZo9eZYtVmQ8ToZEfp_itemcount",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZo9eZYtVmQ8ToZEfp_itemname",
+      "current": "Lança",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZoAtQ6YoJJpF2rclU_itemname",
+      "current": "Pacote de Explorador",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZoCj9ZlxbEM6r8qh2_itemname",
+      "current": "Cota de Malha",
+      "max": ""
+    },
+    {
+      "name": "repeating_inventory_-OlZoEwFf5VkiXcY8w0L_itemname",
+      "current": "Simbolo sagrado",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoHlmxUlrBOE12PyZ_global_ac_name",
+      "current": "Talas",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoHlmxUlrBOE12PyZ_global_ac_val",
+      "current": "7",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoHlmxUlrBOE12PyZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoL5GBGYHrzBsblei_global_ac_name",
+      "current": "Escudo",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoL5GBGYHrzBsblei_global_ac_val",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoL5GBGYHrzBsblei_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoHlmxUlrBOE12PyZ_global_ac_active_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlZoL5GBGYHrzBsblei_global_ac_active_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "lvl1_slots_mod",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "lvl1_slots_expended",
+      "current": "4",
+      "max": ""
+    },
+    {
+      "name": "survival_prof",
+      "current": "(@{pb}*@{survival_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZzhv8JNRko8CxZjZZ_name",
+      "current": "Comum e Draconico",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-OlZzhv8JNRko8CxZjZZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolname",
+      "current": "Lira",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolattr",
+      "current": "CHARISMA",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolbonus",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolbonus_display",
+      "current": 7,
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolroll",
+      "current": "@{wtype}&{template:simple} {{rname=@{toolname}}} {{mod=@{toolbonus}}} {{r1=[[@{d20}+@{toolbonus}[Mods]@{pbd_safe}]]}} {{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}+@{toolbonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_toolattr_base",
+      "current": "@{charisma_mod}",
+      "max": ""
+    },
+    {
+      "name": "repeating_tool_-OlZzlJd1B36wbqme8ry_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_atkname",
+      "current": "Martelo de Batalha",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_atkdmgtype",
+      "current": "1d8+1 Concussivo ",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_rollbase_dmg",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d8 + 1[STR]]]}} {{dmg1type=Concussivo}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_rollbase_crit",
+      "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d8 + 1[STR]]]}} {{dmg1type=Concussivo}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d8]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_atkbonus",
+      "current": "+4",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_rollbase",
+      "current": "@{wtype}&{template:atk} {{mod=@{atkbonus}}} {{rname=[@{atkname}](~repeating_attack_attack_dmg)}} {{rnamec=[@{atkname}](~repeating_attack_attack_crit)}} {{r1=[[@{d20}cs>@{atkcritrange} + 1[STR] + 3[PROF]]]}} @{rtype}cs>@{atkcritrange} + 1[STR] + 3[PROF]]]}} {{range=@{atkrange}}} {{desc=@{atk_desc}}} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globalattack=@{global_attack_mod}}} ammo=@{ammo} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_dmgbase",
+      "current": "1d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_dmgtype",
+      "current": "Concussivo",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "gp",
+      "current": "100",
+      "max": ""
+    },
+    {
+      "name": "inspiration",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaUHFCAX--xrAUvsXi_name",
+      "current": "═════════ BG ════════ ",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaUHFCAX--xrAUvsXi_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_description",
+      "current": "Graças a um de seus atos heróicos que ecoou por meio de boatos por todo um reino, quando ouvem o seu nome, você pode encontrar facilmente um local para descansar e comer em meio a vilarejos e cidades. Adicionalmente, você possui vantagem em Testes de Persuasão para inspirar ou acalmar aldeões e plebeus, como também para conseguir informações sobre problemas referentes a arredores de vilarejos ou cidades.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_source",
+      "current": "Antecedente",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_source_type",
+      "current": "Herói",
+      "max": ""
+    },
+    {
+      "name": "animal_handling_prof",
+      "current": "(@{pb}*@{animal_handling_type})",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_name",
+      "current": "\"I Need a Hero\"",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlaVh78dWJ0yUuE-4H2_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "class_resource_name",
+      "current": "Divine Sense",
+      "max": ""
+    },
+    {
+      "name": "class_resource",
+      "current": "5",
+      "max": "5"
+    },
+    {
+      "name": "other_resource_name",
+      "current": "Lay on Hands",
+      "max": ""
+    },
+    {
+      "name": "other_resource",
+      "current": "25",
+      "max": "25"
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_atkname",
+      "current": "Lança",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_atkdmgtype",
+      "current": "1d6+1 Perfurante ",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_rollbase_dmg",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6 + 1[STR]]]}} {{dmg1type=Perfurante}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_rollbase_crit",
+      "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6 + 1[STR]]]}} {{dmg1type=Perfurante}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d6]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_atkbonus",
+      "current": "+4",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_rollbase",
+      "current": "@{wtype}&{template:atk} {{mod=@{atkbonus}}} {{rname=[@{atkname}](~repeating_attack_attack_dmg)}} {{rnamec=[@{atkname}](~repeating_attack_attack_crit)}} {{r1=[[@{d20}cs>@{atkcritrange} + 1[STR] + 3[PROF]]]}} @{rtype}cs>@{atkcritrange} + 1[STR] + 3[PROF]]]}} {{range=@{atkrange}}} {{desc=@{atk_desc}}} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globalattack=@{global_attack_mod}}} ammo=@{ammo} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_dmgbase",
+      "current": "1d6",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_dmgtype",
+      "current": "Perfurante",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlaZuDq1X4wEl1bUCXl_atk_desc",
+      "current": "**Maestria:** Minar (Sap)\n\n[a](https://gifdb.com/images/high/ace-ventura-leg-spear-hit-79pthg8p0ae270ci.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-OlZ2hFZhY5GqOvBb6t-_atk_desc",
+      "current": "**Maestria:** Push(Empurrar)\n\n[a](https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyc3E2YTR4cTV6ejd4bTV5Y3M4ZTB0YWgwNGM2N3RrNXZqNzM2ZDFwZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/C51woXfgJdug/giphy.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellname",
+      "current": "Bless",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellschool",
+      "current": "enchantment",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellcastingtime",
+      "current": "Action",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellrange",
+      "current": "9 metros [30 feets]",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellcomp_m",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellconcentration",
+      "current": "{{concentration=1}}",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellduration",
+      "current": "1 minuto",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spelldescription",
+      "current": "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellathigherlevels",
+      "current": "You can target one additional creature for each spell slot level above 1.",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_rollcontent",
+      "current": "@{wtype}&{template:spell} {{level=@{spellschool} ?{Cast at what level? @{spelllevel}|Level 1,1|Level 2,2|Level 3,3|Level 4,4|Level 5,5|Level 6,6|Level 7,7|Level 8,8|Level 9,9}}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} {{savedc=@{spell_save_dc}}} @{spellconcentration} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spelldescription",
+      "current": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellname",
+      "current": "Shield of Faith",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellschool",
+      "current": "abjuration",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellcastingtime",
+      "current": "Bonus Action",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellrange",
+      "current": "18 metros [60 feets]",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellcomp_materials",
+      "current": "prayer scroll",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellconcentration",
+      "current": "{{concentration=1}}",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellduration",
+      "current": "10 minutos",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellname",
+      "current": "Cure Wounds",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellcastingtime",
+      "current": "Action",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellrange",
+      "current": "Touch",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellcomp_m",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellduration",
+      "current": "Insta",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spell_ability",
+      "current": "@{charisma_mod}+",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_roll_output_dc",
+      "current": 15,
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spelldescription",
+      "current": "A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spelloutput",
+      "current": "SPELLCARD",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellattackid",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_rollcontent",
+      "current": "%{-1871366118_16214771|repeating_attack_-OrW13lgjEWoKiag5eSL_attack}",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellhealing",
+      "current": "2d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spelldmgmod",
+      "current": "Yes",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellhldie",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellhldietype",
+      "current": "d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellathigherlevels",
+      "current": "The healing increases by 2d8 for each spell slot level above 1.",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "age",
+      "current": "18",
+      "max": ""
+    },
+    {
+      "name": "size",
+      "current": "médio",
+      "max": ""
+    },
+    {
+      "name": "height",
+      "current": "1,72",
+      "max": ""
+    },
+    {
+      "name": "weight",
+      "current": "62 Kg",
+      "max": ""
+    },
+    {
+      "name": "eyes",
+      "current": "Azuis",
+      "max": ""
+    },
+    {
+      "name": "skin",
+      "current": "Clara",
+      "max": ""
+    },
+    {
+      "name": "hair",
+      "current": "Loiros",
+      "max": ""
+    },
+    {
+      "name": "character_appearance",
+      "current": "https://i.imgur.com/neusBGT.png",
+      "max": ""
+    },
+    {
+      "name": "initmod",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "use_per_class_hit_dice",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellsavesuccess",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spelldamage2",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spelldamagetype2",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellsave",
+      "current": "",
+      "max": ""
+    },
+    {
+      "name": "repeating_hd_-Olx1iZPBr22K-BX43br_type",
+      "current": "10",
+      "max": ""
+    },
+    {
+      "name": "repeating_hd_-Olx1iZPBr22K-BX43br_size",
+      "current": 5,
+      "max": ""
+    },
+    {
+      "name": "repeating_hd_-Olx1iZPBr22K-BX43br_available",
+      "current": 5,
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_description",
+      "current": "O aço de um cavaleiro não é apenas forjado na bigorna, mas no espírito. Não importa se empunha espada, maça ou lança — cada movimento é um ato de justiça.\n \nVocê aprimora seu estilo de combate ou sua devoção mágica. Escolha uma das opções abaixo:\n \nEstilo de Luta: Você ganha um Talento de Estilo de Luta à sua escolha (como Defesa, Duelo, Proteção ou Combate com Armas Grandes).\nGuerreiro Abençoado: Você aprende dois truques da lista de Clérigo (sugestões: Chama Sagrada, Orientação). Esses truques contam como magias de Paladino para você, e Carisma é sua habilidade de conjuração para eles.\nArmas Treinadas: Você ganha 3 escolhas de Maestrias de Armas com as quais você tenha proficiência.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_name",
+      "current": "╰┈➤Nível 2: Doutrina Marcial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyQxUq6JPWdGgXh0ZN_description",
+      "current": "Minha lâmina carrega juramento. Não corto carne: corto a mentira que a sustenta. Onde meu voto toca, o perjúrio cede.\n \nVocê pode canalizar energia radiante em seus golpes. Quando você acertar uma criatura com um ataque corpo a corpo desarmado ou com arma:\n \nEfeito: Você pode gastar um Espaço de Magia para causar dano radiante extra ao alvo. O dano é 2d8 para um espaço de 1º nível, mais 1d8 para cada nível de espaço acima do 1º.\nInimigos Profanos: O dano aumenta em 1d8 se o alvo for um Corruptor (Fiend) ou um Morto-vivo.\nLimite: Você só pode usar Destruição Divina uma vez por turno.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyQxUq6JPWdGgXh0ZN_name",
+      "current": "╰┈➤Nível 2: Destruição Divina",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyQxUq6JPWdGgXh0ZN_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyQxUq6JPWdGgXh0ZN_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyPalb3UuLlmlyzzmj_source_type",
+      "current": "Paladino: 2° Nível",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-OlyQxUq6JPWdGgXh0ZN_source_type",
+      "current": "Paladino: 2° Nível",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlyZmuGJjwmaVz4qFiY_global_ac_val",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlyZmuGJjwmaVz4qFiY_global_ac_name",
+      "current": "Defense",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlyZmuGJjwmaVz4qFiY_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OlyZmuGJjwmaVz4qFiY_global_ac_active_flag",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_global_damage_name",
+      "current": "Divine Smite",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_global_damage_damage",
+      "current": "?{Slot|1°Slot,2d8|2°Slot,3d8|3°Slot,4d8|4°Slot,5d8}",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_global_damage_critical_damage",
+      "current": "?{Slot|1°Slot,2d8|2°Slot,3d8|3°Slot,4d8|4°Slot,5d8}",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_global_damage_type",
+      "current": "Radiante [a](https://i.pinimg.com/originals/2e/82/bd/2e82bd4fd56d5bac187203add269c74c.gif)",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_global_damage_name",
+      "current": "Divine (Extra)",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_global_damage_damage",
+      "current": "1d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_global_damage_critical_damage",
+      "current": "1d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_global_damage_type",
+      "current": "Radiante",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZAB0SxoZY7hungkd_global_damage_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_damagemod_-OlyZlOlpom76MKO6yh5_global_damage_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "_reporder_repeating_acmod",
+      "current": "-OlZoHlmxUlrBOE12PyZ,-OlyZmuGJjwmaVz4qFiY,-OlZoL5GBGYHrzBsblei",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnthrlxZIQ4-Pu4wMGH_global_ac_val",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnthrlxZIQ4-Pu4wMGH_global_ac_name",
+      "current": "Shield of Faith",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnthrlxZIQ4-Pu4wMGH_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnththxjKeUNBQeXCkH_global_ac_val",
+      "current": "2",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnththxjKeUNBQeXCkH_global_ac_name",
+      "current": "Lança escudo",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnththxjKeUNBQeXCkH_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnthrlxZIQ4-Pu4wMGH_global_ac_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_acmod_-OnththxjKeUNBQeXCkH_global_ac_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OrW13lItRq50k6UaeRa_global_save_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OrW13lItRq50k6UaeRa_global_save_name",
+      "current": "BLESS",
+      "max": ""
+    },
+    {
+      "name": "repeating_savemod_-OrW13lItRq50k6UaeRa_global_save_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OrW13lItRq50k6UaeRb_global_skill_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OrW13lItRq50k6UaeRb_global_skill_name",
+      "current": "GUIDANCE",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OrW13lItRq50k6UaeRb_global_skill_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OrW13lItRq50k6UaeRc_global_attack_roll",
+      "current": "1d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OrW13lItRq50k6UaeRc_global_attack_name",
+      "current": "BLESS",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OrW13lItRq50k6UaeRc_global_attack_active_flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_skillmod_-OrW13lItRq50k6UaeRb_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18FaEOFD5mdT86bjH_name",
+      "current": "Sangue Planar",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18FaEOFD5mdT86bjH_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18FaEOFD5mdT86bjH_description",
+      "current": "Ao adquirir a Essência Nephilim, você faz três escolhas:\n\nPolo Cósmico: Celestial (Altos Domínios)\nEnergia Primária: Lumen (dano Radiante)\nElemento Natural: Frio.\n\nVocê tem Resistência ao tipo de dano da sua Energia Primária e ao tipo de dano do seu Elemento Natural.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18FaEOFD5mdT86bjH_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18FaEOFD5mdT86bjH_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18S0Qp3L7V6DB9BCN_name",
+      "current": "Marca Planar Manifestada",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18S0Qp3L7V6DB9BCN_description",
+      "current": "Você aprende dois truques: um da sua Energia Primária e um do seu Elemento Natural.\n\nTruque da Energia Primária:\n\nLumen: Luz (Light).\n\nTruque do Elemento Natural:\n\nFrio: Raio de Gelo (Ray of Frost).\n\nSua habilidade de conjuração para esses truques é Inteligência, Sabedoria ou Carisma, escolhida ao adquirir a Essência. Esta escolha vale também para magias adquiridas em talentos posteriores.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18S0Qp3L7V6DB9BCN_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18S0Qp3L7V6DB9BCN_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18S0Qp3L7V6DB9BCN_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18frwN4KbfgReHXhB_name",
+      "current": "Visão Planar",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18frwN4KbfgReHXhB_description",
+      "current": "Você possui Visão no Escuro (Darkvision) com alcance de 18 metros [60 pés]. Se já possuir Visão no Escuro (Darkvision) por outra fonte, o alcance aumenta em 9 metros [30 pés].",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18frwN4KbfgReHXhB_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18frwN4KbfgReHXhB_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18frwN4KbfgReHXhB_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18zPzOjdhzXYp8LTt_name",
+      "current": "╰┈➤Nível 5: Revelação Nephilim",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18zPzOjdhzXYp8LTt_description",
+      "current": "Pré-requisito: Nível 5+, Essência Nephilim.\n\nComo uma Ação Bônus, você se transforma em sua Revelação por 1 minuto. A transformação termina prematuramente se você cair Inconsciente. Enquanto durar:\n\nAsas da Revelação: você manifesta asas planares e ganha deslocamento de Voo igual ao seu deslocamento de caminhada.\nPulso Planar: no final de cada um dos seus turnos, criaturas hostis a até 3 metros [10 pés] de você sofrem dano igual ao seu Bônus de Proficiência, do tipo da sua Energia Primária. Uma vez por turno, ao causar dano em um alvo com um ataque ou magia, você causa dano extra igual ao seu Bônus de Proficiência do tipo da sua Energia Primária.\nVocê pode usar Revelação Nephilim uma vez por Descanso Longo.\n\n[a](https://i.imgur.com/CB2tCIc.png)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18zPzOjdhzXYp8LTt_source",
+      "current": "Racial",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18zPzOjdhzXYp8LTt_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow18zPzOjdhzXYp8LTt_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_description",
+      "current": "Pré-requisito: Nível 4+, Conjuração ou Magia de Pacto.\n\nAumento de Atributo: +1 de Inteligência, Sabedoria ou Carisma.\n\nVocê aprendeu a manter o fio da magia firme mesmo quando aço e caos tentam arrancá-lo das suas mãos. Se o inimigo abre a guarda por um instante, você responde com um feitiço no lugar de uma lâmina.\nVocê conjura sob pressão, sustenta Concentração com mais facilidade e lança magias em janelas curtas de combate, mesmo com as mãos ocupadas.\n\nConcentração Firme: Você tem Vantagem em testes de resistência de Constituição que fizer para manter Concentração.\nMagia Reativa: Quando uma criatura provocar um Ataque de Oportunidade seu, você pode usar uma Reação para conjurar uma magia contra ela em vez de fazer o ataque. A magia deve ter tempo de conjuração de 1 Ação e deve ter como alvo apenas aquela criatura.\nComponentes Somáticos Livres: Você pode realizar os componentes somáticos de magias mesmo quando estiver segurando armas ou um escudo (Shield) em uma ou nas duas mãos.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_name",
+      "current": "Conjurador de Guerra",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_source_type",
+      "current": "Pala N4",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_tohitmod_-OrW13lItRq50k6UaeRc_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_atkname",
+      "current": "Benção da Aurora",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_atkflag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_atkdmgtype",
+      "current": "3d4 Cura ",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_rollbase_dmg",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[3d4]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_rollbase_crit",
+      "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[3d4]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[3d4]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_atkbonus",
+      "current": "-",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_rollbase",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[3d4]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} ammo=@{ammo} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_dmgbase",
+      "current": "3d4",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_dmgtype",
+      "current": "Cura",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow1B50JU-zIGYbbJd0U_dmgattr",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow19t4cEILVZfDnnhSA_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-Ow8LtD5L3HZr1gimJNI_resource_left_name",
+      "current": "Benção da Aurora",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-Ow8LtD5L3HZr1gimJNI_resource_left",
+      "current": "3",
+      "max": "3"
+    },
+    {
+      "name": "repeating_savemod_-OrW13lItRq50k6UaeRa_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8Oa65nNIcwpoIMWfO_spellname",
+      "current": "Command",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8Oa65nNIcwpoIMWfO_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8Oa65nNIcwpoIMWfO_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8Obush7JaBMaBT0HZ_spellname",
+      "current": "Light",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8Obush7JaBMaBT0HZ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8Obush7JaBMaBT0HZ_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8OdVN9Lb4K-6PMTEz_spellname",
+      "current": "Ray of Frost",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8OdVN9Lb4K-6PMTEz_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-cantrip_-Ow8OdVN9Lb4K-6PMTEz_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_atkname",
+      "current": "Ray of Frost",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_atkdmgtype",
+      "current": "2d8 Frio ",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_rollbase_dmg",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[2d8]]}} {{dmg1type=Frio}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_rollbase_crit",
+      "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[2d8]]}} {{dmg1type=Frio}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[2d8]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_atkbonus",
+      "current": "+7",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_rollbase",
+      "current": "@{wtype}&{template:atk} {{mod=@{atkbonus}}} {{rname=[@{atkname}](~repeating_attack_attack_dmg)}} {{rnamec=[@{atkname}](~repeating_attack_attack_crit)}} {{r1=[[@{d20}cs>@{atkcritrange} + 4[CHA] + 3[PROF]]]}} @{rtype}cs>@{atkcritrange} + 4[CHA] + 3[PROF]]]}} {{range=@{atkrange}}} {{desc=@{atk_desc}}} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globalattack=@{global_attack_mod}}} ammo=@{ammo} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_atkattr_base",
+      "current": "spell",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_dmgbase",
+      "current": "2d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_dmgattr",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_dmgtype",
+      "current": "Frio",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_atk_desc",
+      "current": "Reduz o deslocamento em 1,5mts",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8OhprKQ4XxZVB0Fa7_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8QbZAvWnp3ys9JGQM_description",
+      "current": "Juramento Primordial\nOnde algo brota, eu protejo; onde apodrece, eu limpo. Minha palavra é raiz e vento: sustenta e movimenta. Enquanto meu juramento estiver de pé, a vida não pede licença — floresce, e eu abro caminho para que continue.\nO Juramento Primordial precede bandeiras e códices. Seus paladinos respondem à lei mais antiga: a do florescer. Eles nutrem, restauram e defendem o equilíbrio dos elementos muito acima das disputas entre Ordem e Caos. São jardineiros em armadura, parte sentinela, parte estação: fazem chover onde há cinza, fazem sombra onde há aridez, e afastam o que inveja a beleza que insiste em viver.\n\nEm combate, o Primordial transforma terreno em aliado e corpo em exemplo. Fúria da Natureza enreda e freia a violência; Afaste os Sem Fé empurra intrusos sobrenaturais de volta às suas fronteiras. A Aura de Custódia amortiza magias hostis, e a Sentinela Imortal recusa o fim antes da hora. Ainda Paladino, ele sustenta a linha — mas sua linha é feita de raiz, pedra, brisa e maré.\n\nFora da batalha, cura rios, reabre trilhas, educa vilas sobre colheita e escuta o sussurro de florestas. Cuida do próprio corpo como farol do que prega — saúde sem vício, vigor sem ostentação. No auge, como Campeão Primordial, torna-se estação viva: cura ao nascer de cada turno, adianta gestos de magia e inclina o ar contra o invasor. A mensagem é simples: a vida tem defensores, e eles chegaram.\n\n------------------------------------------------\n\n#Princípios do Primordial\n\n-   **Nutra a Vida.**  Através dos seus atos de misericórdia, gentileza, cuidado e perdão, preserve a vida da fauna e da flora, sem atrapalhar o seu equilíbrio e restaurando-o se necessário.\n-   **Proteja o Florescer.**  Onde há bondade, beleza, amor e risada no mundo, levante-se contra a maldade que inveja tudo isso. Onde a vida florescer, oponha-se contra aqueles que tentam destruí-la.\n-   **Seja o Pináculo.**  O seu corpo é um templo e deve dar o exemplo de saúde e naturalidade para inspirar o florescer dos demais. Não prejudique o seu corpo com vícios e substâncias nocivas.\n-   **Defenda os Elementos.**  Você deve lutar para que todo elemento da natureza, que um dia foi puro e sadio, mas agora sofre e morre, seja restaurado dentro do possível.\n",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8QbZAvWnp3ys9JGQM_name",
+      "current": "╰┈➤Nível 3: Juramento Primordial (Dogmas)",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8QbZAvWnp3ys9JGQM_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8QbZAvWnp3ys9JGQM_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8RDfQbjgeJgPwKnjQ_name",
+      "current": "╰┈➤Nível 3: Amor pela Vida",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8RDfQbjgeJgPwKnjQ_description",
+      "current": "\n_Carrego água, cubro sementes, retiro ferrugem da terra e do coração. Meu corpo é exemplo do que prego: fôlego limpo, passo firme, mente clara. Onde eu chego, a vida encontra mãos e método — e aprende que terá sempre quem a ponha de pé._\n\nAo escolher este juramento, você recebe proficiência em Sabedoria (Adestrar Animais) ou Inteligência (Natureza) (à sua escolha), caso ainda não possua.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8RDfQbjgeJgPwKnjQ_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8RDfQbjgeJgPwKnjQ_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SCueJVEmAp8foKCk_name",
+      "current": "Nível 3: Magias de Domínio",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SCueJVEmAp8foKCk_description",
+      "current": "Você ganha as magias listadas abaixo; elas estão sempre preparadas e não contam no seu limite de preparação.\n\nNível de Paladino : Magias\n\n3º: Emaranhar [Entangle], Falar com os Animais [Speak with Animals]\n\n5º: Passo Nebuloso [Misty Step], Raio Lunar [Moonbeam]\n\n9º: Conjurar Animais [Conjure Animals], Crescer Plantas [Plant Growth]\n\n13º: Guardião da Natureza [Guardian of Nature], Pele de Pedra [Stoneskin]\n\n17º: Comunhão com a Natureza [Commune with Nature], Manto Lunar [Alustriel's Mooncloak]",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SCueJVEmAp8foKCk_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SCueJVEmAp8foKCk_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SCueJVEmAp8foKCk_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8STmkgn1ZGhvVZkYm_name",
+      "current": "Nível 3: Canalizar Divindade: Fúria da Natureza",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8STmkgn1ZGhvVZkYm_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8STmkgn1ZGhvVZkYm_description",
+      "current": "_Estalo os dedos e o solo responde. Cipós saem da memória do chão, troncos lembram sua força. Não é crueldade — é poda necessária: segurar o braço que destrói para que o resto continue crescendo._\n\nComo uma  **ação Magia**, você gasta um uso de Canalizar Divindade para conjurar vinhas espectrais ao redor de criaturas próximas. Cada criatura à sua escolha que você possa ver a até  **4,5 metros [15 pés]**  de você deve ser bem-sucedida em um teste de resistência de Força ou fica com a condição  **Restringida**  por 1 minuto. Uma criatura Restringida repete o teste no fim de cada um de seus turnos, encerrando o efeito sobre si em caso de sucesso.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8STmkgn1ZGhvVZkYm_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8STmkgn1ZGhvVZkYm_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SYCwcZJsl69tIUtK_name",
+      "current": "Nível 3: Canalizar Divindade: Afaste os Sem Fé",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SYCwcZJsl69tIUtK_description",
+      "current": "\n_Pronuncio as palavras antigas, e o ar volta a ser honesto. Ao intruso que devora o que floresce — fada perdida ou demônio invasor — eu concedo distância. Recuem, enquanto ainda lhes dou caminho para voltar._\n\nComo uma Ação, você gasta um uso de Canalizar Divindade. Cada fada ou demônio a até  **9 metros [30 pés]**  que possa ouvi-lo faz teste de resistência de Sabedoria. Em falha, fica afastado por 1 minuto ou até sofrer dano. Enquanto afastada, a criatura deve se mover para longe, não pode se aproximar voluntariamente a menos de 9 metros, não pode usar reações e, em sua Ação, só pode Disparada ou tentar escapar de impedimentos; se não houver para onde ir, pode Desviar. Se sua forma verdadeira estiver oculta por ilusão/metamorfose, ela é revelada enquanto estiver afastada.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SYCwcZJsl69tIUtK_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SYCwcZJsl69tIUtK_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8SYCwcZJsl69tIUtK_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8StZHu9I2dUYSFO1c_description",
+      "current": "\n_Eu declaro, concentro e faço valer. A promessa contrai-se como um punho, depois se abre e alimenta o golpe seguinte._\n\nSeu juramento permite que você canalize energia divina diretamente dos Planos Exteriores para alimentar efeitos mágicos. Você começa com um efeito sempre disponível,  **Recorrer ao Poder Divino**, descrito a seguir, e o seu  **Juramento Sagrado**  concede outros  **dois**  efeitos de Canalizar Divindade quando você o escolhe no 3º nível. Cada vez que usar esta característica, você escolhe qual efeito criar.\n\nVocê pode usar Canalizar Divindade  **2 vezes**  e recupera todos os usos gastos ao terminar um  **Descanso Curto**  ou  **Descanso Longo**. A partir do  **11º nível**, você passa a ter  **3 usos**. Se um efeito de Canalizar Divindade exigir um teste de resistência, a  **CD**  é igual à CD de resistência das suas magias de Paladino.\n\n--------------------------------------------------\nRecorrer ao Poder Divino\n\n_Quando a chama baixa, ergo o símbolo e lembro quem confia em mim. O fôlego volta; a lâmina pesa certo._\n\nComo uma  **Ação Bônus**, você gasta um uso de Canalizar Divindade para recuperar um  **espaço de magia**  gasto, de círculo igual ou inferior à metade do seu  **bônus de proficiência**  (arredondado para cima).\n**Slot atual:** [[ceil(@{pb}/2)]]° nível\n\nCada Juramento Sagrado concede ainda dois efeitos próprios de Canalizar Divindade, descritos no spoiler do respectivo Juramento (nível 3).",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8StZHu9I2dUYSFO1c_name",
+      "current": "Nível 3: Canalizar Divindade",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8StZHu9I2dUYSFO1c_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8StZHu9I2dUYSFO1c_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8StZHu9I2dUYSFO1c_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-Ow8LtD5L3HZr1gimJNI_resource_right_name",
+      "current": "Canalizar Divindade",
+      "max": ""
+    },
+    {
+      "name": "repeating_resource_-Ow8LtD5L3HZr1gimJNI_resource_right",
+      "current": "2",
+      "max": "2"
+    },
+    {
+      "name": "repeating_traits_-Ow8TrUdinZhIoNbE4Fo_name",
+      "current": "Nível 3: Saúde Divina",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TrUdinZhIoNbE4Fo_description",
+      "current": "\n_O que me atravessa não me define. Minha disciplina fecha portas à doença. Se eu cair, que seja por falha minha — não por febre covarde._\n\nA magia divina fluindo em você o torna imune a doenças.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TrUdinZhIoNbE4Fo_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TrUdinZhIoNbE4Fo_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TzM3tiPINHGka43Y_name",
+      "current": "Nível 4: Aprimoramento de Atributo ou Talento",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TzM3tiPINHGka43Y_description",
+      "current": "\n_Um voto só permanece se corpo e mente suportam seu peso. Lapido ambos, devagar e sempre: cada pequena vitória é pedra no alicerce. Não busco facilidade, busco capacidade — para carregar mais sem me partir._\n\nSempre que você atingir determinados níveis nesta classe (4, 8, 12, 16 e 19), você evolui suas capacidades. A cada vez que ganha esta característica, você deve fazer uma escolha entre as duas opções abaixo:\n\n##### Aumento de Atributo\n\nVocê aumenta um valor de atributo à sua escolha em +2, ou dois valores de atributo à sua escolha em +1. Como de costume, você não pode aumentar um atributo acima de 20 usando esta característica.\n\n##### Talento\n\nVocê escolhe um Talento para o qual você atenda aos pré-requisitos.\n\n\nNível 4: Conjurador de Guerra",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TzM3tiPINHGka43Y_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8TzM3tiPINHGka43Y_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8U7c5ksAgIkbGZjrX_description",
+      "current": "\n_Quando a linha ameaça ceder, avanço em cadência: o primeiro golpe abre caminho, o segundo cumpre a sentença. Não é pressa — é ritmo treinado, martelo e bigorna, até a dúvida se render._\n\nSua disciplina marcial permite atacar com velocidade punitiva. Sempre que você realizar a ação de Atacar no seu turno, você pode realizar dois ataques em vez de um.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8U7c5ksAgIkbGZjrX_name",
+      "current": "Nível 5: Ataque Extra",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8U7c5ksAgIkbGZjrX_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8U7c5ksAgIkbGZjrX_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8U7c5ksAgIkbGZjrX_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8UBNxSJe98eDQcoSe_name",
+      "current": "Nível 5: Montaria Heróica",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8UBNxSJe98eDQcoSe_description",
+      "current": "\n_O Juramento que aceitastes é de tremenda responsabilidade, carregar este peso sozinho não seria o ideal. Todo campeão precisa de uma fiel montaria, pois a jornada que seguirá já será demasiadamente árdua._\n\nSeu potencial divino e ações em nome de seu juramento o atam a um leal espírito de montaria. Você possui a magia Encontrar Montaria (Find Steed) sempre preparada e ela não conta contra as suas magias preparadas diariamente. Adicionalmente, você pode conjurar a magia com espaços de magia ou com um uso do seu Canalizar Divindade, quando a magia é conjurada desta maneira, ela é conjurada em um nível igual ao seu nível de Paladino dividido por três e arredondado para cima.",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8UBNxSJe98eDQcoSe_source",
+      "current": "Classe",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8UBNxSJe98eDQcoSe_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_traits_-Ow8UBNxSJe98eDQcoSe_display_flag",
+      "current": "on",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UTSJ7IBjDDlorwu3_spellname",
+      "current": "Entagle",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UTSJ7IBjDDlorwu3_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UTSJ7IBjDDlorwu3_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UUhJ03J6bHMPE6If_spellname",
+      "current": "Falar com os Animais",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UUhJ03J6bHMPE6If_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8UUhJ03J6bHMPE6If_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VKipWP-LecxTSo4m_spellname",
+      "current": "Misty Step",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VKipWP-LecxTSo4m_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VKipWP-LecxTSo4m_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VMk8iV2nnTI4N2cp_spellname",
+      "current": "Moonbeam",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VMk8iV2nnTI4N2cp_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VMk8iV2nnTI4N2cp_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VRapo5k-Hd-NZIGS_spellname",
+      "current": "Find Steed",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VRapo5k-Hd-NZIGS_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VRapo5k-Hd-NZIGS_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VWZsaegSJ7YVH1Sq_spellname",
+      "current": "Lesser Restoration",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VWZsaegSJ7YVH1Sq_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VWZsaegSJ7YVH1Sq_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VnPQLVdULv3ZqK8R_spellname",
+      "current": "Prayer of Healing",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VnPQLVdULv3ZqK8R_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VnPQLVdULv3ZqK8R_details-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VWZsaegSJ7YVH1Sq_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-2_-Ow8VnPQLVdULv3ZqK8R_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OladtS3PQ-BZqncIvti_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-OlaexP0cLTozynKnKMM_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Olafjaeecp3lqfrllyJ_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "repeating_spell-1_-Ow8Oa65nNIcwpoIMWfO_spellprepared",
+      "current": "1",
+      "max": ""
+    },
+    {
+      "name": "_reporder_repeating_spell-1",
+      "current": "-Ow8UTSJ7IBjDDlorwu3,-Ow8UUhJ03J6bHMPE6If,-OladtS3PQ-BZqncIvti,-OlaexP0cLTozynKnKMM,-Olafjaeecp3lqfrllyJ,-Ow8Oa65nNIcwpoIMWfO",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_atkname",
+      "current": "Cure Wounds ?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3}° Nível",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_atkflag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_atkdmgtype",
+      "current": "(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8+4 Cura ",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_rollbase_dmg",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8 + 4[CHA]]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_rollbase_crit",
+      "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8 + 4[CHA]]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_atkbonus",
+      "current": "-",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_rollbase",
+      "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8 + 4[CHA]]]}} {{dmg1type=Cura}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} ammo=@{ammo} @{charname_output}",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_dmgbase",
+      "current": "(2*?{Cast Level|1º Slot,1|2º Slot,2|3º Slot,3})d8",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_dmgattr",
+      "current": "spell",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_dmgtype",
+      "current": "Cura",
+      "max": ""
+    },
+    {
+      "name": "repeating_attack_-Ow8WRTMdYCsGOG7yhtb_options-flag",
+      "current": "0",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-Ow8XYH3RXKrgsOJ3-33_prof_type",
+      "current": "OUTRO",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-Ow8XYH3RXKrgsOJ3-33_name",
+      "current": "Resistências: Radiante e Frio",
+      "max": ""
+    },
+    {
+      "name": "repeating_proficiencies_-Ow8XYH3RXKrgsOJ3-33_options-flag",
+      "current": "0",
+      "max": ""
+    }
+  ],
+  "abilities": [
+    {
+      "name": "topple",
+      "action": "teste",
+      "istokenaction": false
+    }
+  ]
+}

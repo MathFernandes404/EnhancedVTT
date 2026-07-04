@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced VTT - Utilitário de Fichas & Tokens para Roll20</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #070913;
+      --bg-surface: rgba(22, 25, 41, 0.7);
+      --primary: #ec4899;
+      --primary-glow: rgba(236, 72, 153, 0.4);
+      --secondary: #d946ef;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Background Glow Effects */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(150px);
+      z-index: -1;
+      opacity: 0.25;
+    }
+    body::before {
+      top: -100px;
+      left: -100px;
+      background: var(--primary);
+    }
+    body::after {
+      bottom: -100px;
+      right: -100px;
+      background: var(--secondary);
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Glass Header Card */
+    .hero-card {
+      background: var(--bg-surface);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      width: 100%;
+      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: 0 0 30px var(--primary-glow);
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 40%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
+    }
+
+    /* Download Button */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: #ffffff;
+      padding: 1.1rem 2.2rem;
+      border-radius: 14px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 25px var(--primary-glow);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(255,255,255,0.15);
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(236, 72, 153, 0.6);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-subtext {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 8px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      margin-bottom: 3.5rem;
+    }
+
+    .feature-card {
+      background: rgba(15, 17, 26, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .feature-card:hover {
+      border-color: rgba(236, 72, 153, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Installation Steps Section */
+    .steps-section {
+      width: 100%;
+      background: var(--bg-surface);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      text-align: left;
+      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #ffffff 70%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .step {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(236, 72, 153, 0.1);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+      box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .step-code {
+      background: rgba(0,0,0,0.3);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: var(--secondary);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      width: 100%;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .logo-container {
+        width: 100px;
+        height: 100px;
+      }
+      .hero-card, .steps-section {
+        padding: 2rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Hero Header -->
+    <header class="hero-card">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Enhanced VTT" class="logo" />
+      </div>
+      <h1>Enhanced VTT</h1>
+      <p class="subtitle">
+        Extensão avançada para Roll20. Gerencie imagens de fichas e panfletos, sincronize atributos/habilidades e aplique tokens customizados com facilidade.
+      </p>
+      
+      <!-- NOTA: Atualize o href abaixo com o link correto do seu release no GitHub -->
+      <a href="https://github.com/MathFernandes404/R20-DnD5e-Spell-Manager/releases" class="download-btn" id="dl-link" target="_blank">
+        <span>📥 Baixar Extensão (.zip)</span>
+      </a>
+      <div class="btn-subtext">Instalação manual via Modo de Desenvolvedor</div>
+    </header>
+
+    <!-- Funcionalidades -->
+    <section class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <div class="feature-title">Fácil Sincronização</div>
+        <div class="feature-desc">Exporte ou importe fichas de personagens completas no formato Roll20 JSON de forma nativa e sem perdas.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚔️</div>
+        <div class="feature-title">Sem Duplicidade</div>
+        <div class="feature-desc">Sincronização diferencial inteligente de magias e atributos, sobrescrevendo alterações e evitando linhas duplicadas.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖼️</div>
+        <div class="feature-title">Galeria de Tokens</div>
+        <div class="feature-desc">Configure auras, barras integradas de HP/recursos e mude o visual do token de combate rapidamente.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗕</div>
+        <div class="feature-title">Interface Compacta</div>
+        <div class="feature-desc">Dê dois cliques no topo do painel para recolhê-lo, mantendo sua mesa de jogo sempre organizada.</div>
+      </div>
+    </section>
+
+    <!-- Passos de Instalação -->
+    <section class="steps-section">
+      <h2 class="section-title">Como Instalar a Extensão</h2>
+      
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <div class="step-title">Baixe o Arquivo</div>
+          <div class="step-desc">Clique no botão de download acima e baixe o arquivo comprimido da última versão (.zip). Extraia o conteúdo da pasta em seu computador.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <div class="step-title">Abra a Página de Extensões</div>
+          <div class="step-desc">No Google Chrome, Brave ou Edge, navegue até <span class="step-code">chrome://extensions/</span> (ou acesse Menu > Extensões > Gerenciar Extensões).</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <div class="step-title">Ative o Modo de Desenvolvedor</div>
+          <div class="step-desc">No canto superior direito da página de extensões, ative a opção <strong style="color: #fff;">Modo do desenvolvedor</strong>.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <div class="step-title">Carregue a Extensão</div>
+          <div class="step-desc">Clique no botão <strong style="color: #fff;">Carregar sem compactação</strong> no canto superior esquerdo e selecione a pasta da extensão extraída (a pasta contendo o arquivo <span class="step-code">manifest.json</span>). Pronto! A extensão estará ativa no seu Roll20.</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Enhanced VTT — Pair programmed with Antigravity AI. Código fonte no <a href="https://github.com/MathFernandes404/R20-DnD5e-Spell-Manager" target="_blank">GitHub</a>.</p>
+  </footer>
+
+  <script>
+    // Tenta atualizar dinamicamente o link de download se a página for hospedada no GitHub
+    const repoPath = "MathFernandes404/R20-DnD5e-Spell-Manager";
+    const dlLink = document.getElementById("dl-link");
+    
+    // Podemos tentar pegar dinamicamente o zip do release mais recente se existirem releases
+    fetch(`https://api.github.com/repos/${repoPath}/releases/latest`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.zipball_url) {
+          dlLink.href = data.zipball_url;
+        } else if (data.assets && data.assets.length > 0) {
+          dlLink.href = data.assets[0].browser_download_url;
+        }
+      })
+      .catch(err => console.log("Usando link de releases padrão:", err));
+  </script>
+</body>
+</html>

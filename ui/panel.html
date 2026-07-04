@@ -1,0 +1,188 @@
+<div class="evtt-top-bar" id="evtt-drag-handle">
+  <span class="evtt-brand-name">Enhanced VTT</span>
+  <div class="evtt-bar-controls">
+    <button id="evtt-collapse-btn" class="evtt-icon-btn" title="Minimizar" style="margin-right: 4px;">&#x2212;</button>
+    <button id="evtt-close-btn" class="evtt-icon-btn" title="Fechar">&times;</button>
+  </div>
+</div>
+
+<div class="evtt-main-container">
+  <div class="evtt-left-bar">
+    <div class="evtt-search-container">
+      <input type="text" id="evtt-search" placeholder="Pesquisar..." class="evtt-input" />
+      <button id="evtt-refresh-btn" class="evtt-icon-btn">&#x21bb;</button>
+    </div>
+    
+    <div class="evtt-filters">
+      <label><input type="checkbox" checked id="filter-chars"> Fichas</label>
+      <label><input type="checkbox" checked id="filter-handouts"> Panfletos</label>
+    </div>
+    
+    <div id="evtt-character-list" class="evtt-list"></div>
+  </div>
+  
+  <div class="evtt-right-section">
+    <div class="evtt-section-top">
+      <h3>Detalhes</h3>
+    </div>
+    
+    <div class="evtt-section-body" id="evtt-details-content">
+      <div class="evtt-empty-state">
+        Selecione um personagem ou panfleto ao lado para ver os detalhes.
+      </div>
+      
+      <div id="evtt-item-details" style="display: none;">
+        <div class="evtt-details-wrapper">
+
+          <!-- Avatar -->
+          <div class="evtt-image-section">
+            <img id="evtt-detail-img" src="" alt="Avatar" />
+            <div class="evtt-input-group">
+              <label>Alterar Imagem (Ficha ou Panfleto)</label>
+              <input type="text" id="evtt-img-url" class="evtt-input" placeholder="https://..." />
+              <button class="evtt-btn evtt-btn-primary" id="evtt-update-img-btn">Salvar Imagem</button>
+            </div>
+          </div>
+
+          <!-- Ficha Export/Import -->
+          <div class="evtt-actions-section">
+            <h4>Ficha de Personagem</h4>
+            <div class="evtt-input-group" style="margin-bottom: 12px;">
+              <label>Formato</label>
+              <select id="evtt-format-select">
+                <option value="roll20">Roll20 (Nativo)</option>
+                <option value="foundry" disabled>Foundry VTT (Em Breve)</option>
+              </select>
+            </div>
+            <div class="evtt-button-row">
+              <button class="evtt-btn" id="evtt-export-json">Exportar</button>
+              <button class="evtt-btn" id="evtt-import-json">Importar</button>
+            </div>
+          </div>
+
+          <!-- Token Config -->
+          <div class="evtt-actions-section">
+            <h4>Configurações do Token</h4>
+            <div class="evtt-button-row" style="margin-bottom: 12px;">
+              <button class="evtt-btn" id="evtt-token-config">Editar Token</button>
+              <button class="evtt-btn" id="evtt-open-gallery">Galeria</button>
+            </div>
+            
+            <div id="evtt-token-config-area" style="display: none;">
+              <div class="evtt-token-config-grid">
+                
+                <!-- Token Image Column -->
+                <div class="evtt-token-config-col flex-image-col">
+                  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                    <img id="evtt-token-preview-img" src="" alt="Token"
+                         onerror="this.style.display='none'"
+                         onload="this.style.display='block'"
+                         style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--evtt-border);" />
+                    <div class="evtt-input-group" style="width: 100%;">
+                      <label>Imagem do Token (URL)</label>
+                      <input type="text" id="evtt-token-img-url" class="evtt-input" placeholder="https://..." />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Size + Auras Column -->
+                <div class="evtt-token-config-col">
+                  <div class="evtt-input-group" style="margin-bottom: 12px;">
+                    <label>Tamanho (Grid)</label>
+                    <div style="display: flex; gap: 5px; align-items: center;">
+                      <input type="number" id="evtt-token-width" class="evtt-input" placeholder="L" style="width: 55px;" />
+                      <span style="color: var(--evtt-text-secondary);">x</span>
+                      <input type="number" id="evtt-token-height" class="evtt-input" placeholder="A" style="width: 55px;" />
+                    </div>
+                  </div>
+                  <div class="evtt-input-group">
+                    <label>Auras (Raio / Cor / Formato)</label>
+                    <!-- Aura 1 -->
+                    <div style="display: flex; gap: 6px; align-items: center; margin-bottom: 6px;">
+                      <span style="font-size: 11px; color: var(--evtt-text-secondary); width: 18px; font-weight: 700;">A1</span>
+                      <input type="number" id="evtt-aura1-radius" class="evtt-input" placeholder="0" style="width: 50px; padding: 6px 10px !important;" />
+                      <input type="color" id="evtt-aura1-color" value="#ffff00" style="width: 28px; height: 28px; border: none; cursor: pointer; border-radius: 4px; flex-shrink: 0;" />
+                      <select id="evtt-aura1-shape" class="evtt-select-small" style="width: 65px !important; margin: 0 !important; padding: 6px 20px 6px 6px !important; font-size: 11px !important;">
+                        <option value="round">Redonda</option>
+                        <option value="square">Quadrada</option>
+                      </select>
+                    </div>
+                    <!-- Aura 2 -->
+                    <div style="display: flex; gap: 6px; align-items: center;">
+                      <span style="font-size: 11px; color: var(--evtt-text-secondary); width: 18px; font-weight: 700;">A2</span>
+                      <input type="number" id="evtt-aura2-radius" class="evtt-input" placeholder="0" style="width: 50px; padding: 6px 10px !important;" />
+                      <input type="color" id="evtt-aura2-color" value="#ff0000" style="width: 28px; height: 28px; border: none; cursor: pointer; border-radius: 4px; flex-shrink: 0;" />
+                      <select id="evtt-aura2-shape" class="evtt-select-small" style="width: 65px !important; margin: 0 !important; padding: 6px 20px 6px 6px !important; font-size: 11px !important;">
+                        <option value="round">Redonda</option>
+                        <option value="square">Quadrada</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bars Column -->
+                <div class="evtt-token-config-col">
+                  <div class="evtt-input-group">
+                    <label>Barras (Valor / Max / Link)</label>
+                    
+                    <!-- Bar 1 -->
+                    <div style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--evtt-border);">
+                      <div style="display: flex; gap: 4px; align-items: center; margin-bottom: 4px;">
+                        <span style="font-size: 11px; color: var(--evtt-text-secondary); width: 18px; font-weight: 700;">B1</span>
+                        <input type="number" id="evtt-bar1-value" class="evtt-input" placeholder="V" style="flex: 1; min-width: 35px;" />
+                        <span style="color: var(--evtt-text-secondary);">/</span>
+                        <input type="number" id="evtt-bar1-max" class="evtt-input" placeholder="M" style="flex: 1; min-width: 35px;" />
+                      </div>
+                      <select id="evtt-bar1-link" class="evtt-select-small">
+                        <option value="">Nenhum Atributo</option>
+                      </select>
+                    </div>
+
+                    <!-- Bar 2 -->
+                    <div style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--evtt-border);">
+                      <div style="display: flex; gap: 4px; align-items: center; margin-bottom: 4px;">
+                        <span style="font-size: 11px; color: var(--evtt-text-secondary); width: 18px; font-weight: 700;">B2</span>
+                        <input type="number" id="evtt-bar2-value" class="evtt-input" placeholder="V" style="flex: 1; min-width: 35px;" />
+                        <span style="color: var(--evtt-text-secondary);">/</span>
+                        <input type="number" id="evtt-bar2-max" class="evtt-input" placeholder="M" style="flex: 1; min-width: 35px;" />
+                      </div>
+                      <select id="evtt-bar2-link" class="evtt-select-small">
+                        <option value="">Nenhum Atributo</option>
+                      </select>
+                    </div>
+
+                    <!-- Bar 3 -->
+                    <div>
+                      <div style="display: flex; gap: 4px; align-items: center; margin-bottom: 4px;">
+                        <span style="font-size: 11px; color: var(--evtt-text-secondary); width: 18px; font-weight: 700;">B3</span>
+                        <input type="number" id="evtt-bar3-value" class="evtt-input" placeholder="V" style="flex: 1; min-width: 35px;" />
+                        <span style="color: var(--evtt-text-secondary);">/</span>
+                        <input type="number" id="evtt-bar3-max" class="evtt-input" placeholder="M" style="flex: 1; min-width: 35px;" />
+                      </div>
+                      <select id="evtt-bar3-link" class="evtt-select-small">
+                        <option value="">Nenhum Atributo</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <button class="evtt-btn evtt-btn-primary" id="evtt-apply-token" style="width: 100%; margin-top: 12px;">Aplicar no Mapa</button>
+            </div>
+
+            <!-- Gallery -->
+            <div id="evtt-gallery-area" style="display: none; margin-top: 12px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--evtt-border);">
+                <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--evtt-primary);">Galeria de Tokens</span>
+                <button class="evtt-btn evtt-btn-primary" id="evtt-gallery-save-btn" style="padding: 4px 10px; font-size: 11px;">Salvar Atual</button>
+              </div>
+              <div id="evtt-gallery-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
