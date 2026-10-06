@@ -564,6 +564,10 @@ function showItemDetails(item) {
         night_vision_distance: document.getElementById("evtt-token-night-vision-distance")?.value || "",
         night_vision_tint: document.getElementById("evtt-token-night-vision-tint")?.value || "#ffffff",
         night_vision_effect: document.getElementById("evtt-token-night-vision-effect")?.value || "",
+        emits_bright_light: document.getElementById("evtt-token-emits-bright-light")?.checked || false,
+        bright_light_distance: document.getElementById("evtt-token-bright-light-distance")?.value || "",
+        emits_low_light: document.getElementById("evtt-token-emits-low-light")?.checked || false,
+        low_light_distance: document.getElementById("evtt-token-low-light-distance")?.value || "",
 
         bar1_value: document.getElementById("evtt-bar1-value").value,
         bar1_max: document.getElementById("evtt-bar1-max").value,
@@ -626,6 +630,10 @@ function showItemDetails(item) {
       night_vision_distance: document.getElementById("evtt-token-night-vision-distance")?.value || "",
       night_vision_tint: document.getElementById("evtt-token-night-vision-tint")?.value || "#ffffff",
       night_vision_effect: document.getElementById("evtt-token-night-vision-effect")?.value || "",
+      emits_bright_light: document.getElementById("evtt-token-emits-bright-light")?.checked || false,
+      bright_light_distance: document.getElementById("evtt-token-bright-light-distance")?.value || "",
+      emits_low_light: document.getElementById("evtt-token-emits-low-light")?.checked || false,
+      low_light_distance: document.getElementById("evtt-token-low-light-distance")?.value || "",
 
       bar1_value: document.getElementById("evtt-bar1-value").value,
       bar1_max: document.getElementById("evtt-bar1-max").value,
@@ -732,6 +740,10 @@ function fillTokenInputs(config) {
   if (document.getElementById("evtt-token-night-vision-distance")) document.getElementById("evtt-token-night-vision-distance").value = config.night_vision_distance ?? "";
   if (document.getElementById("evtt-token-night-vision-tint")) document.getElementById("evtt-token-night-vision-tint").value = config.night_vision_tint || "#ffffff";
   if (document.getElementById("evtt-token-night-vision-effect")) document.getElementById("evtt-token-night-vision-effect").value = config.night_vision_effect ?? "";
+  if (document.getElementById("evtt-token-emits-bright-light")) document.getElementById("evtt-token-emits-bright-light").checked = !!config.emits_bright_light;
+  if (document.getElementById("evtt-token-bright-light-distance")) document.getElementById("evtt-token-bright-light-distance").value = config.bright_light_distance ?? "";
+  if (document.getElementById("evtt-token-emits-low-light")) document.getElementById("evtt-token-emits-low-light").checked = !!config.emits_low_light;
+  if (document.getElementById("evtt-token-low-light-distance")) document.getElementById("evtt-token-low-light-distance").value = config.low_light_distance ?? "";
 
   if (document.getElementById("evtt-bar1-value")) document.getElementById("evtt-bar1-value").value = config.bar1_value ?? "";
   if (document.getElementById("evtt-bar1-max")) document.getElementById("evtt-bar1-max").value = config.bar1_max ?? "";
