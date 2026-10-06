@@ -120,6 +120,103 @@
                   </div>
                 </div>
 
+                <!-- General Token + Vision Column -->
+                <div class="evtt-token-config-col">
+                  <div class="evtt-input-group" style="margin-bottom: 12px;">
+                    <label>Identificação do Token</label>
+                    <input type="text" id="evtt-token-name" class="evtt-input" placeholder="Nome do Token" />
+
+                    <div style="display: flex; gap: 6px; margin-top: 8px;">
+                      <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer;">
+                        <input type="checkbox" id="evtt-token-fliph" />
+                        Espelhar H
+                      </label>
+                      <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer;">
+                        <input type="checkbox" id="evtt-token-flipv" />
+                        Espelhar V
+                      </label>
+                    </div>
+
+                    <div style="display: flex; gap: 6px; margin-top: 6px;">
+                      <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer;">
+                        <input type="checkbox" id="evtt-token-showname" />
+                        Mostrar nome
+                      </label>
+                      <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer;">
+                        <input type="checkbox" id="evtt-token-showplayers-name" />
+                        Jogadores
+                      </label>
+                    </div>
+
+                    <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer; margin-top: 6px;">
+                      <input type="checkbox" id="evtt-token-isdrawing" />
+                      Tratar como desenho
+                    </label>
+                  </div>
+
+                  <div class="evtt-input-group" style="margin-bottom: 12px;">
+                    <label>Visão / Iluminação</label>
+
+                    <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer; margin-bottom: 7px;">
+                      <input type="checkbox" id="evtt-token-light-hassight" />
+                      Possui visão
+                    </label>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+                      <div>
+                        <label>Raio</label>
+                        <input type="number" id="evtt-token-light-radius" class="evtt-input" placeholder="0" />
+                      </div>
+                      <div>
+                        <label>Raio escuro</label>
+                        <input type="number" id="evtt-token-light-dimradius" class="evtt-input" placeholder="0" />
+                      </div>
+                      <div>
+                        <label>Ângulo</label>
+                        <input type="number" id="evtt-token-light-angle" class="evtt-input" placeholder="360" />
+                      </div>
+                      <div>
+                        <label>Ângulo LOS</label>
+                        <input type="number" id="evtt-token-light-losangle" class="evtt-input" placeholder="360" />
+                      </div>
+                    </div>
+
+                    <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer; margin-top: 7px;">
+                      <input type="checkbox" id="evtt-token-light-otherplayers" />
+                      Outros jogadores enxergam
+                    </label>
+
+                    <div style="margin-top: 7px;">
+                      <label>Multiplicador da luz</label>
+                      <input type="number" id="evtt-token-light-multiplier" class="evtt-input" placeholder="1" step="0.1" />
+                    </div>
+                  </div>
+
+                  <div class="evtt-input-group">
+                    <label>Darkvision / Visão Noturna</label>
+
+                    <label style="display: flex; align-items: center; gap: 5px; font-size: 11px; cursor: pointer; margin-bottom: 7px;">
+                      <input type="checkbox" id="evtt-token-night-vision" />
+                      Ativar visão noturna
+                    </label>
+
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 6px;">
+                      <div>
+                        <label>Distância</label>
+                        <input type="number" id="evtt-token-night-vision-distance" class="evtt-input" placeholder="60" />
+                      </div>
+                      <div>
+                        <label>Tom da visão</label>
+                        <input type="color" id="evtt-token-night-vision-tint" value="#ffffff" style="width: 100%; height: 28px; border: none; cursor: pointer; border-radius: 4px;" />
+                      </div>
+                      <div>
+                        <label>Efeito</label>
+                        <input type="text" id="evtt-token-night-vision-effect" class="evtt-input" placeholder="Efeito da visão noturna" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Bars Column -->
                 <div class="evtt-token-config-col">
                   <div class="evtt-input-group">
