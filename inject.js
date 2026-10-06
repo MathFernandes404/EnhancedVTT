@@ -153,46 +153,113 @@ function handleUpdateImageByName({ name, url }) {
 
 function handleUpdateToken({ id, config }) {
   if (!window.Campaign || !window.Campaign.activePage) return;
+  if (!config || typeof config !== "object") return;
+
   const page = window.Campaign.activePage();
   if (!page || !page.thegraphics) return;
-  
+
   let updated = 0;
+
   page.thegraphics.models.forEach(token => {
     if (token.get("represents") === id) {
       const updates = {};
-      
-      if (config.imgsrc) updates.imgsrc = config.imgsrc;
-      
-      // Grid dimensions (Roll20 default is 70x70)
-      if (config.width) updates.width = parseFloat(config.width) * 70;
-      if (config.height) updates.height = parseFloat(config.height) * 70;
-      
-      if (config.aura1_radius) { updates.aura1_radius = config.aura1_radius; updates.showplayers_aura1 = true; }
-      if (config.aura1_color) updates.aura1_color = config.aura1_color;
-      if (config.aura1_shape !== undefined) updates.aura1_square = (config.aura1_shape === "square");
-      
-      if (config.aura2_radius) { updates.aura2_radius = config.aura2_radius; updates.showplayers_aura2 = true; }
-      if (config.aura2_color) updates.aura2_color = config.aura2_color;
-      if (config.aura2_shape !== undefined) updates.aura2_square = (config.aura2_shape === "square");
 
-      if (config.bar1_value) { updates.bar1_value = config.bar1_value; updates.showplayers_bar1 = true; }
-      if (config.bar1_max) updates.bar1_max = config.bar1_max;
-      if (config.bar1_link !== undefined) updates.bar1_link = config.bar1_link;
-      
-      if (config.bar2_value) { updates.bar2_value = config.bar2_value; updates.showplayers_bar2 = true; }
-      if (config.bar2_max) updates.bar2_max = config.bar2_max;
-      if (config.bar2_link !== undefined) updates.bar2_link = config.bar2_link;
-      
-      if (config.bar3_value) { updates.bar3_value = config.bar3_value; updates.showplayers_bar3 = true; }
-      if (config.bar3_max) updates.bar3_max = config.bar3_max;
-      if (config.bar3_link !== undefined) updates.bar3_link = config.bar3_link;
-      
+      // Image
+      if (config.imgsrc !== undefined) {
+        updates.imgsrc = config.imgsrc;
+      }
+
+      // Grid dimensions (Roll20 default is 70x70)
+      // The UI uses grid units, while Roll20 token graphics use pixels.
+      if (config.width !== undefined && config.width !== "") {
+        const width = parseFloat(config.width);
+        if (Number.isFinite(width)) {
+          updates.width = width * 70;
+        }
+      }
+
+      if (config.height !== undefined && config.height !== "") {
+        const height = parseFloat(config.height);
+        if (Number.isFinite(height)) {
+          updates.height = height * 70;
+        }
+      }
+
+      // Copy every supported token configuration field.
+      // Empty strings and false/zero values are intentionally preserved.
+      TOKEN_CONFIG_FIELDS.forEach(field => {
+        if (
+          field === "imgsrc" ||
+          field === "width" ||
+          field === "height"
+        ) {
+          return;
+        }
+
+        if (config[field] !== undefined) {
+          updates[field] = config[field];
+        }
+      });
+
+      // The UI stores aura shape as "round"/"square", while Roll20
+      // stores it as a boolean in auraX_square.
+      if (config.aura1_shape !== undefined) {
+        updates.aura1_square = (config.aura1_shape === "square");
+      }
+
+      if (config.aura2_shape !== undefined) {
+        updates.aura2_square = (config.aura2_shape === "square");
+      }
+
+      // Keep the existing convenience behavior of automatically enabling
+      // bars/auras when their values are explicitly configured.
+      if (
+        config.aura1_radius !== undefined &&
+        String(config.aura1_radius).trim() !== ""
+      ) {
+        updates.showplayers_aura1 = true;
+      }
+
+      if (
+        config.aura2_radius !== undefined &&
+        String(config.aura2_radius).trim() !== ""
+      ) {
+        updates.showplayers_aura2 = true;
+      }
+
+      if (
+        config.bar1_value !== undefined ||
+        config.bar1_max !== undefined ||
+        config.bar1_link !== undefined
+      ) {
+        updates.showplayers_bar1 = true;
+      }
+
+      if (
+        config.bar2_value !== undefined ||
+        config.bar2_max !== undefined ||
+        config.bar2_link !== undefined
+      ) {
+        updates.showplayers_bar2 = true;
+      }
+
+      if (
+        config.bar3_value !== undefined ||
+        config.bar3_max !== undefined ||
+        config.bar3_link !== undefined
+      ) {
+        updates.showplayers_bar3 = true;
+      }
+
       token.save(updates);
       updated++;
     }
   });
-  
-  window.postMessage({ type: "EVTT_ALERT", payload: { message: `Atualizados ${updated} tokens no mapa atual.` } }, "*");
+
+  window.postMessage({
+    type: "EVTT_ALERT",
+    payload: { message: \`Atualizados \${updated} tokens no mapa atual.\` }
+  }, "*");
 }
 
 function getModelByIdAndType(id, type) {
@@ -369,38 +436,74 @@ async function handleImportJSON({ id, type, data }) {
       // Keep track of which attributes from Roll20 are still in the imported JSON
       const importedNames = new Set();
 
-      // Apply all attributes — synchronous fire-and-forget
+      // Apply all attributes.
+      // Existing attributes can be mapped immediately. New attributes must
+      // finish their server-side creation before their real Roll20 ID can
+      // be placed in attributeIdMap.
       for (const attr of importAttributes) {
         if (!attr.name) continue;
         importedNames.add(attr.name);
 
-        const currentVal = attr.current !== undefined && attr.current !== null ? String(attr.current) : "";
-        const maxVal = attr.max !== undefined && attr.max !== null ? String(attr.max) : "";
+        const currentVal =
+          attr.current !== undefined && attr.current !== null
+            ? String(attr.current)
+            : "";
+
+        const maxVal =
+          attr.max !== undefined && attr.max !== null
+            ? String(attr.max)
+            : "";
 
         if (existing[attr.name]) {
-  const existingAttr = existing[attr.name];
+          const existingAttr = existing[attr.name];
 
-  existingAttr.save({
-    current: attr.current,
-    max: attr.max
-  });
+          await new Promise((resolve, reject) => {
+            existingAttr.save(
+              {
+                current: currentVal,
+                max: maxVal
+              },
+              {
+                success: resolve,
+                error: (_model, error) => reject(error)
+              }
+            );
+          });
 
-  if (attr.id) {
-    attributeIdMap[attr.id] = existingAttr.id;
-  }
+          if (attr.id) {
+            attributeIdMap[attr.id] =
+              existingAttr.id || existingAttr.get("id");
+          }
+        } else {
+          const newAttr = await new Promise((resolve, reject) => {
+            const created = model.attribs.create(
+              {
+                name: String(attr.name),
+                current: currentVal,
+                max: maxVal
+              },
+              {
+                wait: true,
+                success: resolve,
+                error: (_model, error) => reject(error)
+              }
+            );
 
-} else {
-  const newAttr = model.attribs.create({
-    name: attr.name,
-    current: attr.current,
-    max: attr.max
-  });
+            if (!created) {
+              resolve(null);
+            }
+          });
 
-  if (attr.id && newAttr) {
-    attributeIdMap[attr.id] =
-      newAttr.id || newAttr.get("id");
-  }
-}
+          if (attr.id && newAttr) {
+            const newAttrId =
+              newAttr.id || newAttr.get("id");
+
+            if (newAttrId) {
+              attributeIdMap[attr.id] = newAttrId;
+            }
+          }
+        }
+      }
 
       // Destroy attributes that are NOT in the imported JSON
       model.attribs.models.slice().forEach(attr => {
@@ -460,26 +563,65 @@ async function handleImportJSON({ id, type, data }) {
     }
 
     // ---- DEFAULT TOKEN ----
+    let importedToken = null;
+
     if (type === "character" && data.defaulttoken) {
       let token = data.defaulttoken;
+
       if (typeof token === "string") {
-        try { token = JSON.parse(token); } catch { token = null; }
+        try {
+          token = JSON.parse(token);
+        } catch (error) {
+          console.warn(
+            "[EnhancedVTT] Não foi possível interpretar o defaulttoken importado:",
+            error
+          );
+          token = null;
+        }
       }
+
       if (token && typeof token === "object") {
-        delete token._id;
-        delete token._pageid;
-        token.represents = model.id;
-        const tokenStr = JSON.stringify(token);
-        model.set("defaulttoken", tokenStr);
-        model._blobcache = model._blobcache || {};
-        model._blobcache.defaulttoken = tokenStr;
+        importedToken = prepareTokenForImport(
+          token,
+          model.id,
+          attributeIdMap
+        );
+
+        if (importedToken) {
+          const tokenStr = JSON.stringify(importedToken);
+
+          model.set("defaulttoken", tokenStr);
+
+          model._blobcache = model._blobcache || {};
+          model._blobcache.defaulttoken = tokenStr;
+        }
       }
     }
 
-    // Final save — this is the only await inside the import
+    // Final save for the character and its default token.
     await model.save();
 
-    window.postMessage({ type: "EVTT_ALERT", payload: { message: "Ficha importada com sucesso!" } }, "*");
+    // The defaulttoken is the portable source of truth for token
+    // configuration. Existing tokens on the active page receive those
+    // configuration values while keeping their own map placement.
+    let updatedMapTokens = 0;
+
+    if (importedToken) {
+      updatedMapTokens = applyImportedTokenConfigToExistingTokens(
+        model.id,
+        importedToken
+      );
+    }
+
+    window.postMessage({
+      type: "EVTT_ALERT",
+      payload: {
+        message:
+          updatedMapTokens > 0
+            ? \`Ficha importada com sucesso! \${updatedMapTokens} token(s) do mapa atualizados.\`
+            : "Ficha importada com sucesso!"
+      }
+    }, "*");
     sendCampaignData();
 
   } catch (err) {
@@ -511,10 +653,51 @@ function remapTokenAttributeLinks(token, attributeIdMap) {
       return;
     }
 
-    token[bar] = attributeIdMap[oldId] || "";
+    token[bar] = attributeIdMap[oldId] || oldId;
   });
 
   return token;
+}
+
+function applyImportedTokenConfigToExistingTokens(characterId, tokenConfig) {
+  if (!window.Campaign || !window.Campaign.activePage) {
+    return 0;
+  }
+
+  if (!characterId || !tokenConfig || typeof tokenConfig !== "object") {
+    return 0;
+  }
+
+  const page = window.Campaign.activePage();
+  if (!page || !page.thegraphics || !page.thegraphics.models) {
+    return 0;
+  }
+
+  let updated = 0;
+
+  page.thegraphics.models.forEach(token => {
+    if (token.get("represents") !== characterId) {
+      return;
+    }
+
+    const updates = {};
+
+    // Apply only portable configuration fields.
+    // Position, rotation, layer and Roll20 object IDs are intentionally
+    // excluded from TOKEN_CONFIG_FIELDS, so existing map placement survives.
+    TOKEN_CONFIG_FIELDS.forEach(field => {
+      if (tokenConfig[field] !== undefined) {
+        updates[field] = tokenConfig[field];
+      }
+    });
+
+    if (Object.keys(updates).length > 0) {
+      token.save(updates);
+      updated++;
+    }
+  });
+
+  return updated;
 }
 
 function prepareTokenForImport(tokenData, characterId, attributeIdMap) {
@@ -528,6 +711,14 @@ function prepareTokenForImport(tokenData, characterId, attributeIdMap) {
   delete token._id;
   delete token._pageid;
   delete token.id;
+
+  // Token-instance fields must never be copied into an existing map token.
+  // The exported whitelist normally prevents these fields from appearing,
+  // but removing them here also protects imports of older/manual JSON files.
+  delete token.left;
+  delete token.top;
+  delete token.rotation;
+  delete token.layer;
 
   // O token deve representar o personagem de destino
   token.represents = characterId;
