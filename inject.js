@@ -1,3 +1,69 @@
+const TOKEN_CONFIG_FIELDS = [
+  // Identificação visual
+  "name",
+  "imgsrc",
+  "width",
+  "height",
+  "isdrawing",
+  "flipv",
+  "fliph",
+
+  // Barras
+  "bar1_value",
+  "bar1_max",
+  "bar1_link",
+  "showplayers_bar1",
+
+  "bar2_value",
+  "bar2_max",
+  "bar2_link",
+  "showplayers_bar2",
+
+  "bar3_value",
+  "bar3_max",
+  "bar3_link",
+  "showplayers_bar3",
+
+  // Nome
+  "showname",
+  "showplayers_name",
+
+  // Auras
+  "aura1_radius",
+  "aura1_color",
+  "aura1_square",
+  "showplayers_aura1",
+
+  "aura2_radius",
+  "aura2_color",
+  "aura2_square",
+  "showplayers_aura2",
+
+  // Visão / iluminação
+  "light_radius",
+  "light_dimradius",
+  "light_otherplayers",
+  "light_hassight",
+  "light_angle",
+  "light_losangle",
+  "light_multiplier",
+
+  // Darkvision / visão noturna
+  "has_night_vision",
+  "night_vision_distance",
+  "night_vision_tint",
+  "night_vision_effect",
+
+  // Bright / low light
+  "emits_bright_light",
+  "bright_light_distance",
+  "emits_low_light",
+  "low_light_distance",
+
+  // Status
+  "statusmarkers"
+];
+
 // inject.js
 // Este script roda no escopo da página do Roll20, tendo acesso ao `window.Campaign`
 
@@ -203,20 +269,30 @@ async function handleExportJSON({ id, type }) {
     });
 
     // Default token
-    let rawToken = (model._blobcache && model._blobcache.defaulttoken) || model.get("defaulttoken");
-    if (rawToken) {
-      let tokenObj = rawToken;
-      if (typeof rawToken === "string") {
-        try { tokenObj = JSON.parse(rawToken); } catch { tokenObj = null; }
-      }
-      if (tokenObj && typeof tokenObj === "object") {
-        tokenObj = JSON.parse(JSON.stringify(tokenObj));
-        delete tokenObj._id;
-        delete tokenObj._pageid;
-        delete tokenObj.represents;
-        exportData.defaulttoken = tokenObj;
-      }
+ let rawToken =
+  (model._blobcache && model._blobcache.defaulttoken) ||
+  model.get("defaulttoken");
+
+if (rawToken) {
+  let tokenObj = rawToken;
+
+  if (typeof rawToken === "string") {
+    try {
+      tokenObj = JSON.parse(rawToken);
+    } catch (error) {
+      console.warn("[EnhancedVTT] Não foi possível interpretar defaulttoken:", error);
+      tokenObj = null;
     }
+  }
+
+  if (tokenObj && typeof tokenObj === "object") {
+    const cleanToken = sanitizeTokenForExport(tokenObj);
+
+    if (cleanToken) {
+      exportData.defaulttoken = cleanToken;
+    }
+  }
+}
 
     // Attributes
     if (type === "character" && model.attribs && model.attribs.models) {
@@ -274,6 +350,9 @@ async function handleImportJSON({ id, type, data }) {
       archived: false
     });
 
+    const attributeIdMap = {};
+
+
     // ---- ATTRIBUTES ----
     const importAttributes = data.attributes || data.attribs;
     if (type === "character" && Array.isArray(importAttributes) && model.attribs) {
@@ -299,21 +378,29 @@ async function handleImportJSON({ id, type, data }) {
         const maxVal = attr.max !== undefined && attr.max !== null ? String(attr.max) : "";
 
         if (existing[attr.name]) {
-          const extAttr = existing[attr.name];
-          if (String(extAttr.get("current") ?? "") !== currentVal || String(extAttr.get("max") ?? "") !== maxVal) {
-            extAttr.save({
-              current: currentVal,
-              max:     maxVal
-            });
-          }
-        } else {
-          model.attribs.create({
-            name:    String(attr.name),
-            current: currentVal,
-            max:     maxVal
-          });
-        }
-      }
+  const existingAttr = existing[attr.name];
+
+  existingAttr.save({
+    current: attr.current,
+    max: attr.max
+  });
+
+  if (attr.id) {
+    attributeIdMap[attr.id] = existingAttr.id;
+  }
+
+} else {
+  const newAttr = model.attribs.create({
+    name: attr.name,
+    current: attr.current,
+    max: attr.max
+  });
+
+  if (attr.id && newAttr) {
+    attributeIdMap[attr.id] =
+      newAttr.id || newAttr.get("id");
+  }
+}
 
       // Destroy attributes that are NOT in the imported JSON
       model.attribs.models.slice().forEach(attr => {
@@ -399,6 +486,88 @@ async function handleImportJSON({ id, type, data }) {
     console.error("EVTT: Erro ao importar:", err);
     window.postMessage({ type: "EVTT_ALERT", payload: { message: "Erro ao importar dados da ficha." } }, "*");
   }
+}
+
+function remapTokenAttributeLinks(token, attributeIdMap) {
+  if (!token || typeof token !== "object") {
+    return token;
+  }
+
+  const bars = [
+    "bar1_link",
+    "bar2_link",
+    "bar3_link"
+  ];
+
+  bars.forEach(bar => {
+    if (token[bar] === undefined) {
+      return;
+    }
+
+    const oldId = token[bar];
+
+    if (!oldId) {
+      token[bar] = "";
+      return;
+    }
+
+    token[bar] = attributeIdMap[oldId] || "";
+  });
+
+  return token;
+}
+
+function prepareTokenForImport(tokenData, characterId, attributeIdMap) {
+  if (!tokenData || typeof tokenData !== "object") {
+    return null;
+  }
+
+  const token = JSON.parse(JSON.stringify(tokenData));
+
+  // IDs específicos da campanha antiga nunca devem ser reutilizados
+  delete token._id;
+  delete token._pageid;
+  delete token.id;
+
+  // O token deve representar o personagem de destino
+  token.represents = characterId;
+
+  // Corrigir links das barras
+  remapTokenAttributeLinks(token, attributeIdMap);
+
+  return token;
+}
+
+function extractTokenConfig(token) {
+  if (!token) return null;
+
+  const config = {};
+
+  TOKEN_CONFIG_FIELDS.forEach(field => {
+    const value = token.get(field);
+
+    if (value !== undefined) {
+      config[field] = value;
+    }
+  });
+
+  return config;
+}
+
+function sanitizeTokenForExport(tokenData) {
+  if (!tokenData || typeof tokenData !== "object") {
+    return null;
+  }
+
+  const clean = {};
+
+  TOKEN_CONFIG_FIELDS.forEach(field => {
+    if (tokenData[field] !== undefined) {
+      clean[field] = tokenData[field];
+    }
+  });
+
+  return clean;
 }
 
 function getAccessibleItems(collection, itemType) {
