@@ -423,26 +423,29 @@ async function handleImportJSON({ id, type, data }) {
     // ---- ATTRIBUTES ----
     const importAttributes = data.attributes || data.attribs;
     if (type === "character" && Array.isArray(importAttributes) && model.attribs) {
-      // Fetch current attributes first
+      // Keep the original Roll20 behavior here: attribute save/create is
+      // intentionally fire-and-forget. The previous working version used
+      // this behavior and Roll20's collection implementation does not
+      // reliably expose Backbone success callbacks for every attribute save.
       await new Promise(r => model.attribs.fetch({ success: r, error: r }));
 
-      // Build lookup of existing attributes by name
       const existing = {};
       model.attribs.models.forEach(a => {
         const name = a.get("name");
         if (name) existing[name] = a;
       });
 
-      // Keep track of which attributes from Roll20 are still in the imported JSON
       const importedNames = new Set();
+      const importedAttributeNamesById = {};
 
-      // Apply all attributes.
-      // Existing attributes can be mapped immediately. New attributes must
-      // finish their server-side creation before their real Roll20 ID can
-      // be placed in attributeIdMap.
       for (const attr of importAttributes) {
         if (!attr.name) continue;
+
         importedNames.add(attr.name);
+
+        if (attr.id) {
+          importedAttributeNamesById[attr.id] = attr.name;
+        }
 
         const currentVal =
           attr.current !== undefined && attr.current !== null
@@ -457,17 +460,9 @@ async function handleImportJSON({ id, type, data }) {
         if (existing[attr.name]) {
           const existingAttr = existing[attr.name];
 
-          await new Promise((resolve, reject) => {
-            existingAttr.save(
-              {
-                current: currentVal,
-                max: maxVal
-              },
-              {
-                success: resolve,
-                error: (_model, error) => reject(error)
-              }
-            );
+          existingAttr.save({
+            current: currentVal,
+            max: maxVal
           });
 
           if (attr.id) {
@@ -475,25 +470,14 @@ async function handleImportJSON({ id, type, data }) {
               existingAttr.id || existingAttr.get("id");
           }
         } else {
-          const newAttr = await new Promise((resolve, reject) => {
-            const created = model.attribs.create(
-              {
-                name: String(attr.name),
-                current: currentVal,
-                max: maxVal
-              },
-              {
-                wait: true,
-                success: resolve,
-                error: (_model, error) => reject(error)
-              }
-            );
-
-            if (!created) {
-              resolve(null);
-            }
+          const newAttr = model.attribs.create({
+            name: String(attr.name),
+            current: currentVal,
+            max: maxVal
           });
 
+          // Preserve the behavior of the old implementation when the
+          // collection returns the model with its ID immediately.
           if (attr.id && newAttr) {
             const newAttrId =
               newAttr.id || newAttr.get("id");
@@ -505,7 +489,26 @@ async function handleImportJSON({ id, type, data }) {
         }
       }
 
-      // Destroy attributes that are NOT in the imported JSON
+      // Rebuild the ID map from the destination collection after all
+      // creates/saves. This catches attributes whose definitive Roll20 ID
+      // was assigned only after collection.create().
+      await new Promise(r => model.attribs.fetch({ success: r, error: r }));
+
+      model.attribs.models.forEach(attr => {
+        const name = attr.get("name");
+        if (!name) return;
+
+        const attrId = attr.id || attr.get("id");
+        if (!attrId) return;
+
+        Object.keys(importedAttributeNamesById).forEach(oldId => {
+          if (importedAttributeNamesById[oldId] === name) {
+            attributeIdMap[oldId] = attrId;
+          }
+        });
+      });
+
+      // Destroy attributes that are NOT in the imported JSON.
       model.attribs.models.slice().forEach(attr => {
         const name = attr.get("name");
         if (name && !importedNames.has(name)) {
