@@ -422,30 +422,83 @@ async function handleImportJSON({ id, type, data }) {
 
     // ---- ATTRIBUTES ----
     const importAttributes = data.attributes || data.attribs;
+
     if (type === "character" && Array.isArray(importAttributes) && model.attribs) {
-      // Keep the original Roll20 behavior here: attribute save/create is
-      // intentionally fire-and-forget. The previous working version used
-      // this behavior and Roll20's collection implementation does not
-      // reliably expose Backbone success callbacks for every attribute save.
       await new Promise(r => model.attribs.fetch({ success: r, error: r }));
 
+      /*
+       * Roll20 possui dois tipos importantes de atributos:
+       *
+       * 1. Atributos normais:
+       *    strength, hp, level, etc.
+       *
+       * 2. Atributos de seções repetíveis:
+       *    repeating_attack_...
+       *    repeating_spell-...
+       *    repeating_tool...
+       *
+       * Os repeating_* representam linhas inteiras da ficha. Eles não
+       * devem ser tratados como atributos normais, porque os IDs das
+       * linhas podem ser diferentes entre personagens/campanhas.
+       *
+       * A regra é:
+       * - atributos normais: atualizar/criar, sem apagar atributos auxiliares
+       *   existentes no personagem destino;
+       * - repeating_*: substituir as linhas existentes pelos dados importados.
+       */
       const existing = {};
-      model.attribs.models.forEach(a => {
-        const name = a.get("name");
-        if (name) existing[name] = a;
+      model.attribs.models.forEach(attr => {
+        const name = attr.get("name");
+        if (!name) return;
+
+        // Para atributos normais, o nome é a chave.
+        if (!name.startsWith("repeating_")) {
+          if (!existing[name]) {
+            existing[name] = attr;
+          }
+        }
       });
 
-      const importedNames = new Set();
+      const importedNormalNames = new Set();
+      const importedRepeatingNames = new Set();
       const importedAttributeNamesById = {};
 
-      for (const attr of importAttributes) {
-        if (!attr.name) continue;
+      const repeatingAttributes = [];
+      const normalAttributes = [];
 
-        importedNames.add(attr.name);
+      for (const attr of importAttributes) {
+        if (!attr || !attr.name) continue;
+
+        if (attr.name.startsWith("repeating_")) {
+          repeatingAttributes.push(attr);
+        } else {
+          normalAttributes.push(attr);
+        }
 
         if (attr.id) {
           importedAttributeNamesById[attr.id] = attr.name;
         }
+      }
+
+      /*
+       * Primeiro removemos somente as linhas repeating_* existentes.
+       * Atributos normais auxiliares do sheet permanecem intactos.
+       */
+      model.attribs.models.slice().forEach(attr => {
+        const name = attr.get("name");
+
+        if (name && name.startsWith("repeating_")) {
+          attr.destroy();
+        }
+      });
+
+      /*
+       * ---- ATRIBUTOS NORMAIS ----
+       */
+      for (const attr of normalAttributes) {
+        const name = String(attr.name);
+
+        importedNormalNames.add(name);
 
         const currentVal =
           attr.current !== undefined && attr.current !== null
@@ -457,8 +510,8 @@ async function handleImportJSON({ id, type, data }) {
             ? String(attr.max)
             : "";
 
-        if (existing[attr.name]) {
-          const existingAttr = existing[attr.name];
+        if (existing[name]) {
+          const existingAttr = existing[name];
 
           existingAttr.save({
             current: currentVal,
@@ -466,18 +519,20 @@ async function handleImportJSON({ id, type, data }) {
           });
 
           if (attr.id) {
-            attributeIdMap[attr.id] =
+            const destinationId =
               existingAttr.id || existingAttr.get("id");
+
+            if (destinationId) {
+              attributeIdMap[attr.id] = destinationId;
+            }
           }
         } else {
           const newAttr = model.attribs.create({
-            name: String(attr.name),
+            name,
             current: currentVal,
             max: maxVal
           });
 
-          // Preserve the behavior of the old implementation when the
-          // collection returns the model with its ID immediately.
           if (attr.id && newAttr) {
             const newAttrId =
               newAttr.id || newAttr.get("id");
@@ -489,31 +544,60 @@ async function handleImportJSON({ id, type, data }) {
         }
       }
 
-      // Rebuild the ID map from the destination collection after all
-      // creates/saves. This catches attributes whose definitive Roll20 ID
-      // was assigned only after collection.create().
+      /*
+       * ---- ATRIBUTOS REPETÍVEIS ----
+       *
+       * Criamos exatamente as linhas existentes no JSON exportado.
+       * Não tentamos casar uma linha repeating com outra pelo nome,
+       * pois o próprio nome contém o identificador da linha.
+       */
+      for (const attr of repeatingAttributes) {
+        const currentVal =
+          attr.current !== undefined && attr.current !== null
+            ? String(attr.current)
+            : "";
+
+        const maxVal =
+          attr.max !== undefined && attr.max !== null
+            ? String(attr.max)
+            : "";
+
+        const newAttr = model.attribs.create({
+          name: String(attr.name),
+          current: currentVal,
+          max: maxVal
+        });
+
+        if (attr.id && newAttr) {
+          const newAttrId =
+            newAttr.id || newAttr.get("id");
+
+          if (newAttrId) {
+            attributeIdMap[attr.id] = newAttrId;
+          }
+        }
+
+        importedRepeatingNames.add(String(attr.name));
+      }
+
+      /*
+       * O Roll20 pode só atribuir o ID definitivo depois do create().
+       * Fazemos um fetch final para reconstruir o mapa usando os nomes
+       * que acabaram de ser criados.
+       */
       await new Promise(r => model.attribs.fetch({ success: r, error: r }));
 
       model.attribs.models.forEach(attr => {
         const name = attr.get("name");
-        if (!name) return;
+        const destinationId = attr.id || attr.get("id");
 
-        const attrId = attr.id || attr.get("id");
-        if (!attrId) return;
+        if (!name || !destinationId) return;
 
         Object.keys(importedAttributeNamesById).forEach(oldId => {
           if (importedAttributeNamesById[oldId] === name) {
-            attributeIdMap[oldId] = attrId;
+            attributeIdMap[oldId] = destinationId;
           }
         });
-      });
-
-      // Destroy attributes that are NOT in the imported JSON.
-      model.attribs.models.slice().forEach(attr => {
-        const name = attr.get("name");
-        if (name && !importedNames.has(name)) {
-          attr.destroy();
-        }
       });
     }
 
