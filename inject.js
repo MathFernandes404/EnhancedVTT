@@ -258,7 +258,7 @@ function handleUpdateToken({ id, config }) {
 
   window.postMessage({
     type: "EVTT_ALERT",
-    payload: { message: \`Atualizados \${updated} tokens no mapa atual.\` }
+    payload: { message: `Atualizados ${updated} tokens no mapa atual.` }
   }, "*");
 }
 
@@ -618,7 +618,7 @@ async function handleImportJSON({ id, type, data }) {
       payload: {
         message:
           updatedMapTokens > 0
-            ? \`Ficha importada com sucesso! \${updatedMapTokens} token(s) do mapa atualizados.\`
+            ? `Ficha importada com sucesso! ${updatedMapTokens} token(s) do mapa atualizados.`
             : "Ficha importada com sucesso!"
       }
     }, "*");
