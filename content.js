@@ -537,12 +537,34 @@ function showItemDetails(item) {
         imgsrc: document.getElementById("evtt-token-img-url").value,
         width: document.getElementById("evtt-token-width").value,
         height: document.getElementById("evtt-token-height").value,
+
+        name: document.getElementById("evtt-token-name")?.value || "",
+        flipv: document.getElementById("evtt-token-flipv")?.checked || false,
+        fliph: document.getElementById("evtt-token-fliph")?.checked || false,
+        isdrawing: document.getElementById("evtt-token-isdrawing")?.checked || false,
+        showname: document.getElementById("evtt-token-showname")?.checked || false,
+        showplayers_name: document.getElementById("evtt-token-showplayers-name")?.checked || false,
+
         aura1_radius: document.getElementById("evtt-aura1-radius").value,
         aura1_color: document.getElementById("evtt-aura1-color").value,
         aura1_shape: document.getElementById("evtt-aura1-shape").value,
         aura2_radius: document.getElementById("evtt-aura2-radius").value,
         aura2_color: document.getElementById("evtt-aura2-color").value,
         aura2_shape: document.getElementById("evtt-aura2-shape").value,
+
+        light_hassight: document.getElementById("evtt-token-light-hassight")?.checked || false,
+        light_radius: document.getElementById("evtt-token-light-radius")?.value || "",
+        light_dimradius: document.getElementById("evtt-token-light-dimradius")?.value || "",
+        light_otherplayers: document.getElementById("evtt-token-light-otherplayers")?.checked || false,
+        light_angle: document.getElementById("evtt-token-light-angle")?.value || "",
+        light_losangle: document.getElementById("evtt-token-light-losangle")?.value || "",
+        light_multiplier: document.getElementById("evtt-token-light-multiplier")?.value || "",
+
+        has_night_vision: document.getElementById("evtt-token-night-vision")?.checked || false,
+        night_vision_distance: document.getElementById("evtt-token-night-vision-distance")?.value || "",
+        night_vision_tint: document.getElementById("evtt-token-night-vision-tint")?.value || "#ffffff",
+        night_vision_effect: document.getElementById("evtt-token-night-vision-effect")?.value || "",
+
         bar1_value: document.getElementById("evtt-bar1-value").value,
         bar1_max: document.getElementById("evtt-bar1-max").value,
         bar1_link: document.getElementById("evtt-bar1-link").value,
@@ -577,12 +599,34 @@ function showItemDetails(item) {
       imgsrc: document.getElementById("evtt-token-img-url").value,
       width: document.getElementById("evtt-token-width").value,
       height: document.getElementById("evtt-token-height").value,
+
+      name: document.getElementById("evtt-token-name")?.value || "",
+      flipv: document.getElementById("evtt-token-flipv")?.checked || false,
+      fliph: document.getElementById("evtt-token-fliph")?.checked || false,
+      isdrawing: document.getElementById("evtt-token-isdrawing")?.checked || false,
+      showname: document.getElementById("evtt-token-showname")?.checked || false,
+      showplayers_name: document.getElementById("evtt-token-showplayers-name")?.checked || false,
+
       aura1_radius: document.getElementById("evtt-aura1-radius").value,
       aura1_color: document.getElementById("evtt-aura1-color").value,
       aura1_shape: document.getElementById("evtt-aura1-shape").value,
       aura2_radius: document.getElementById("evtt-aura2-radius").value,
       aura2_color: document.getElementById("evtt-aura2-color").value,
       aura2_shape: document.getElementById("evtt-aura2-shape").value,
+
+      light_hassight: document.getElementById("evtt-token-light-hassight")?.checked || false,
+      light_radius: document.getElementById("evtt-token-light-radius")?.value || "",
+      light_dimradius: document.getElementById("evtt-token-light-dimradius")?.value || "",
+      light_otherplayers: document.getElementById("evtt-token-light-otherplayers")?.checked || false,
+      light_angle: document.getElementById("evtt-token-light-angle")?.value || "",
+      light_losangle: document.getElementById("evtt-token-light-losangle")?.value || "",
+      light_multiplier: document.getElementById("evtt-token-light-multiplier")?.value || "",
+
+      has_night_vision: document.getElementById("evtt-token-night-vision")?.checked || false,
+      night_vision_distance: document.getElementById("evtt-token-night-vision-distance")?.value || "",
+      night_vision_tint: document.getElementById("evtt-token-night-vision-tint")?.value || "#ffffff",
+      night_vision_effect: document.getElementById("evtt-token-night-vision-effect")?.value || "",
+
       bar1_value: document.getElementById("evtt-bar1-value").value,
       bar1_max: document.getElementById("evtt-bar1-max").value,
       bar1_link: document.getElementById("evtt-bar1-link").value,
@@ -592,8 +636,7 @@ function showItemDetails(item) {
       bar3_value: document.getElementById("evtt-bar3-value").value,
       bar3_max: document.getElementById("evtt-bar3-max").value,
       bar3_link: document.getElementById("evtt-bar3-link").value
-    };
-    
+    };    
     window.postMessage({
       type: "EVTT_UPDATE_TOKEN",
       payload: { id: item.id, config }
@@ -659,25 +702,47 @@ function loadAndRenderGallery(item) {
 }
 
 function fillTokenInputs(config) {
-  if (document.getElementById("evtt-token-img-url")) document.getElementById("evtt-token-img-url").value = config.imgsrc || "";
-  if (document.getElementById("evtt-token-width")) document.getElementById("evtt-token-width").value = config.width || "";
-  if (document.getElementById("evtt-token-height")) document.getElementById("evtt-token-height").value = config.height || "";
-  if (document.getElementById("evtt-aura1-radius")) document.getElementById("evtt-aura1-radius").value = config.aura1_radius || "";
+  if (document.getElementById("evtt-token-img-url")) document.getElementById("evtt-token-img-url").value = config.imgsrc ?? "";
+  if (document.getElementById("evtt-token-width")) document.getElementById("evtt-token-width").value = config.width ?? "";
+  if (document.getElementById("evtt-token-height")) document.getElementById("evtt-token-height").value = config.height ?? "";
+
+  if (document.getElementById("evtt-token-name")) document.getElementById("evtt-token-name").value = config.name ?? "";
+  if (document.getElementById("evtt-token-fliph")) document.getElementById("evtt-token-fliph").checked = !!config.fliph;
+  if (document.getElementById("evtt-token-flipv")) document.getElementById("evtt-token-flipv").checked = !!config.flipv;
+  if (document.getElementById("evtt-token-isdrawing")) document.getElementById("evtt-token-isdrawing").checked = !!config.isdrawing;
+  if (document.getElementById("evtt-token-showname")) document.getElementById("evtt-token-showname").checked = !!config.showname;
+  if (document.getElementById("evtt-token-showplayers-name")) document.getElementById("evtt-token-showplayers-name").checked = !!config.showplayers_name;
+
+  if (document.getElementById("evtt-aura1-radius")) document.getElementById("evtt-aura1-radius").value = config.aura1_radius ?? "";
   if (document.getElementById("evtt-aura1-color")) document.getElementById("evtt-aura1-color").value = config.aura1_color || "#ffff00";
   if (document.getElementById("evtt-aura1-shape")) document.getElementById("evtt-aura1-shape").value = config.aura1_shape || "round";
-  if (document.getElementById("evtt-aura2-radius")) document.getElementById("evtt-aura2-radius").value = config.aura2_radius || "";
+  if (document.getElementById("evtt-aura2-radius")) document.getElementById("evtt-aura2-radius").value = config.aura2_radius ?? "";
   if (document.getElementById("evtt-aura2-color")) document.getElementById("evtt-aura2-color").value = config.aura2_color || "#ff0000";
   if (document.getElementById("evtt-aura2-shape")) document.getElementById("evtt-aura2-shape").value = config.aura2_shape || "round";
-  if (document.getElementById("evtt-bar1-value")) document.getElementById("evtt-bar1-value").value = config.bar1_value || "";
-  if (document.getElementById("evtt-bar1-max")) document.getElementById("evtt-bar1-max").value = config.bar1_max || "";
-  if (document.getElementById("evtt-bar1-link")) document.getElementById("evtt-bar1-link").value = config.bar1_link || "";
-  if (document.getElementById("evtt-bar2-value")) document.getElementById("evtt-bar2-value").value = config.bar2_value || "";
-  if (document.getElementById("evtt-bar2-max")) document.getElementById("evtt-bar2-max").value = config.bar2_max || "";
-  if (document.getElementById("evtt-bar2-link")) document.getElementById("evtt-bar2-link").value = config.bar2_link || "";
-  if (document.getElementById("evtt-bar3-value")) document.getElementById("evtt-bar3-value").value = config.bar3_value || "";
-  if (document.getElementById("evtt-bar3-max")) document.getElementById("evtt-bar3-max").value = config.bar3_max || "";
-  if (document.getElementById("evtt-bar3-link")) document.getElementById("evtt-bar3-link").value = config.bar3_link || "";
-  
+
+  if (document.getElementById("evtt-token-light-hassight")) document.getElementById("evtt-token-light-hassight").checked = !!config.light_hassight;
+  if (document.getElementById("evtt-token-light-radius")) document.getElementById("evtt-token-light-radius").value = config.light_radius ?? "";
+  if (document.getElementById("evtt-token-light-dimradius")) document.getElementById("evtt-token-light-dimradius").value = config.light_dimradius ?? "";
+  if (document.getElementById("evtt-token-light-otherplayers")) document.getElementById("evtt-token-light-otherplayers").checked = !!config.light_otherplayers;
+  if (document.getElementById("evtt-token-light-angle")) document.getElementById("evtt-token-light-angle").value = config.light_angle ?? "";
+  if (document.getElementById("evtt-token-light-losangle")) document.getElementById("evtt-token-light-losangle").value = config.light_losangle ?? "";
+  if (document.getElementById("evtt-token-light-multiplier")) document.getElementById("evtt-token-light-multiplier").value = config.light_multiplier ?? "";
+
+  if (document.getElementById("evtt-token-night-vision")) document.getElementById("evtt-token-night-vision").checked = !!config.has_night_vision;
+  if (document.getElementById("evtt-token-night-vision-distance")) document.getElementById("evtt-token-night-vision-distance").value = config.night_vision_distance ?? "";
+  if (document.getElementById("evtt-token-night-vision-tint")) document.getElementById("evtt-token-night-vision-tint").value = config.night_vision_tint || "#ffffff";
+  if (document.getElementById("evtt-token-night-vision-effect")) document.getElementById("evtt-token-night-vision-effect").value = config.night_vision_effect ?? "";
+
+  if (document.getElementById("evtt-bar1-value")) document.getElementById("evtt-bar1-value").value = config.bar1_value ?? "";
+  if (document.getElementById("evtt-bar1-max")) document.getElementById("evtt-bar1-max").value = config.bar1_max ?? "";
+  if (document.getElementById("evtt-bar1-link")) document.getElementById("evtt-bar1-link").value = config.bar1_link ?? "";
+  if (document.getElementById("evtt-bar2-value")) document.getElementById("evtt-bar2-value").value = config.bar2_value ?? "";
+  if (document.getElementById("evtt-bar2-max")) document.getElementById("evtt-bar2-max").value = config.bar2_max ?? "";
+  if (document.getElementById("evtt-bar2-link")) document.getElementById("evtt-bar2-link").value = config.bar2_link ?? "";
+  if (document.getElementById("evtt-bar3-value")) document.getElementById("evtt-bar3-value").value = config.bar3_value ?? "";
+  if (document.getElementById("evtt-bar3-max")) document.getElementById("evtt-bar3-max").value = config.bar3_max ?? "";
+  if (document.getElementById("evtt-bar3-link")) document.getElementById("evtt-bar3-link").value = config.bar3_link ?? "";
+
   const tokenPreviewImg = document.getElementById("evtt-token-preview-img");
   if (tokenPreviewImg) {
     tokenPreviewImg.src = config.imgsrc || document.getElementById("evtt-detail-img").src;
