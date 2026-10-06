@@ -284,7 +284,28 @@ function setupPanelListeners() {
     
     if (event.data.type && event.data.type === "EVTT_DATA_SYNC") {
       cachedCampaignData = event.data.payload;
+
+      // Keep the currently selected item synchronized with the fresh
+      // campaign data. This is especially important after importing a
+      // character, because its name/avatar/attributes can change while
+      // the details panel is still open.
+      if (activeItem) {
+        const updatedItem =
+          cachedCampaignData.characters?.find(item => item.id === activeItem.id) ||
+          cachedCampaignData.handouts?.find(item => item.id === activeItem.id);
+
+        if (updatedItem) {
+          activeItem = updatedItem;
+        }
+      }
+
       filterAndRenderList();
+
+      // Refresh the open details panel without requiring the user to
+      // deselect/reselect the character.
+      if (activeItem) {
+        showItemDetails(activeItem);
+      }
     }
 
     if (event.data.type && event.data.type === "EVTT_CHARACTER_ATTRIBUTES_SYNC") {
